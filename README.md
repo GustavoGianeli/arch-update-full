@@ -24,7 +24,7 @@ Este é um script de automação e manutenção completa para usuários de **Arc
 
 Para usar o script como um comando nativo e ter o atalho no seu menu de aplicativos, rode os seguintes comandos no terminal:
 
-### 1. Configurar o Executável Para Aparecer como um App
+### 1. Configure o Executável e o Atalho
 ```bash
 sudo cp arch-update-full /usr/bin/arch-update-full
 sudo chmod 755 /usr/bin/arch-update-full
