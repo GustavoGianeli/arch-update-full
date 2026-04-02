@@ -26,5 +26,7 @@ Para usar o script como um comando nativo e ter o atalho no seu menu de aplicati
 
 ### 1. Configurar o Executável
 ```bash
-sudo cp atualizacao-arquitetura-completa /usr/bin/arch-update-full
-sudo chmod 755 /usr/bin/arch-update-full
+sudo cp arch-update-full /usr/bin/arch-update-full
+sudo chmod +x /usr/bin/arch-update-full
+sudo cp arch-update-full.desktop /usr/share/applications/
+
