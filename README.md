@@ -17,6 +17,12 @@ Este é um script de automação e manutenção completa para usuários de **Arc
 - [x] **Otimização de Cache:** Limpa versões antigas de pacotes baixados para economizar SSD.
 - [x] **Interface Visual:** Estética Neon Blue/Cyberpunk no terminal com assinatura personalizada.
 
+
+## Disponível no AUR: yay -S arch-update-full
+<img width="2484" height="466" alt="print aur" src="https://github.com/user-attachments/assets/35be2bb2-a958-4c17-93d4-3b137f2fb0a5" />
+
+
+
 ---
 ## 📸 Demonstração Visual
 
