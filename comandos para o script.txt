@@ -1,0 +1,14 @@
+comandos para o script virar app
+
+
+sudo cp arch-update-full /usr/bin/arch-update-full
+
+
+sudo chmod +x /usr/bin/arch-update-full
+
+
+sudo cp arch-update-full.desktop /usr/share/applications/
+
+
+
+####### rodar esses comandos para criar um icone executavel #######
