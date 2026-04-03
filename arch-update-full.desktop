@@ -1,8 +1,9 @@
 [Desktop Entry]
 Name=Arch Update Full
-Comment=Protocolo de Manutenção Cyberpunk by Sétimo
-Exec=arch-update-full
-Icon=system-software-update
-Terminal=true
+Comment=Protocolo Cyberpunk: Atualizador Completo
+Exec=gnome-terminal -- /usr/bin/arch-update-full
+Icon=/usr/share/pixmaps/logoarchupdatefull.jpeg
+Terminal=false
 Type=Application
 Categories=System;Settings;
+Keywords=update;arch;pacman;yay;flatpak;
