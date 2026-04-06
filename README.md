@@ -66,8 +66,9 @@ Demonstração Visual
 <img width="1165" height="863" alt="print 3 " src="https://github.com/user-attachments/assets/85753f93-36db-4e6e-b53d-38f77664a5ad" />
 
 ### 🚀 Menu do Sistema (v3.5) — novo Ícone Personalizado
+<img width="771" height="768" alt="logoarchupdatefull" src="https://github.com/user-attachments/assets/cc7a29dd-01e7-49b2-95e6-01fd66eea14d" />
 
-<img width="321" height="285" alt="print logo" src="https://github.com/user-attachments/assets/6b883264-8908-4337-984f-588210056ea9" />
+
 
 
 ### 🚀 Como Instalar Manualmente
