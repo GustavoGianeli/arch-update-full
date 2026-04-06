@@ -40,8 +40,9 @@ O **arch-update-full** executa uma sequência rigorosa de onze camadas de integr
 
 ### 🔔 Notificações Inteligentes
 **Alertas desktop em tempo real sobre a disponibilidade de novas atualizações e a confirmação imediata ao concluir o protocolo de manutenção.**
+<img width="1425" height="588" alt="print notificaçao" src="https://github.com/user-attachments/assets/c84c3874-0940-4a60-bbc0-2943818cc826" />
 
-![Notificação do Sistema](logoarchupdatefull.png)
+
 ---
 
 ## 🚀 Instalação Oficial (AUR)
@@ -59,18 +60,14 @@ Menu: Integração nativa com ambientes GNOME/KDE através do atalho customizado
 Demonstração Visual
 
 ### ⚡ Protocolo Sétimo em Ação
+
 <img width="1165" height="863" alt="print 1" src="https://github.com/user-attachments/assets/83e723d5-82b9-43d5-899e-d32b0fefaa9d" />
 <img width="1165" height="863" alt="print 2" src="https://github.com/user-attachments/assets/edaa0685-2c07-4f8e-84af-1e5871ad462f" />
 <img width="1165" height="863" alt="print 3 " src="https://github.com/user-attachments/assets/85753f93-36db-4e6e-b53d-38f77664a5ad" />
 
-## 📸 Notificações inteligentes: alertas desktop em tempo real sobre a disponibilidade de novas atualizações e a confirmação imediata ao concluir o protocolo de manutenção.
-<img width="1425" height="588" alt="print notificaçao" src="https://github.com/user-attachments/assets/4990617b-c5f3-4726-a682-b6f20b4937ce" />
-
-
 ### 🚀 Menu do Sistema (v3.5) — novo Ícone Personalizado
+
 <img width="321" height="285" alt="print logo" src="https://github.com/user-attachments/assets/6b883264-8908-4337-984f-588210056ea9" />
-
-
 
 
 ### 🚀 Como Instalar Manualmente
@@ -81,6 +78,8 @@ git clone https://aur.archlinux.org/arch-update-full.git
 cd arch-update-full
 makepkg -si
 ```
+Ou se preferir...
+
 ```bash
 # 1. Injeta o script no path do sistema
 sudo cp arch-update-full /usr/bin/arch-update-full
