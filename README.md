@@ -1,4 +1,4 @@
- ###🛡️ Arch Update Full (Protocolo Sentinela) **Versão 3.6**
+###🛡️ Arch Update Full (Protocolo Sentinela) **Versão 3.6**
 
 **"Automação é a fundação da soberania digital."** > Script desenvolvido para centralizar a manutenção crítica de sistemas baseados em Arch Linux.
 
