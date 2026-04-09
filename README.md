@@ -15,10 +15,12 @@ Identidade Visual: Implementação oficial do novo ícone de alta resolução pa
 
 **📦 Instalação (AUR)**
 **O Arch Update Full está disponível no AUR. Esta é a forma recomendada de instalação para manter o software sempre atualizado.**
-Via yay:
-yay -S arch-update-full
-Via paru:
-paru -S arch-update-full
+
+## Via yay:
+**yay -S arch-update-full**
+
+## Via paru:
+**paru -S arch-update-full**
 
 # 🛠️ Arquitetura do Protocolo (Core Functions)
 
@@ -82,7 +84,7 @@ Demonstração Visual
 
 ### 🚀 **RECOMENDAMOS INSTALAR VIA PACOTE AUR** mas se prefirir fazer manualmente 
 
-## Como Instalar Manualmente
+# Como Instalar Manualmente
 
 Para usar o script como um comando nativo e ter o atalho no seu menu de aplicativos, execute os seguintes comandos:
 ```bash
