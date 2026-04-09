@@ -1,9 +1,24 @@
-# 🟦 Protocolo Cyberpunk: arch-update-full (v3.5)
+ ## 🛡️ Arch Update Full (Protocolo Sentinela) **Versão 3.6**
 
 **"Automação é a fundação da soberania digital."** > Script desenvolvido para centralizar a manutenção crítica de sistemas baseados em Arch Linux.
 
-O arch-update-full evoluiu de um utilitário de manutenção para um Orquestrador de Integridade e Automação de Próxima Geração. Projetado para o ecossistema Arch Linux, ele transcende a simples atualização ao unificar a gestão de pacotes oficiais, AUR (Yay/Paru), Flatpaks e Snaps sob o Sentinel Protocol v3.5. Através de monitoramento em background via Systemd User Timers, auditoria em tempo real de Kernel/Drivers e um sistema de notificações inteligentes, ele garante que a estabilidade e a segurança do sistema operem de forma autônoma, silenciosa e com performance absoluta
+O arch-update-full evoluiu de um utilitário de manutenção para um Orquestrador de Integridade e Automação de Próxima Geração. Projetado para o ecossistema Arch Linux, ele transcende a simples atualização ao unificar a gestão de pacotes oficiais, AUR (Yay/Paru), Flatpaks e Snaps sob o Sentinel Protocol v3.6. Através de monitoramento em background via Systemd User Timers, auditoria em tempo real de Kernel/Drivers e um sistema de notificações inteligentes, ele garante que a estabilidade e a segurança do sistema operem de forma autônoma, silenciosa e com performance absoluta
 
+🚀 Novidades da Versão 3.6 (Protocolo Sentinela)
+Esta atualização foca em automação proativa e refinamento visual:
+
+Monitoramento Sentinela: O script agora conta com uma **verificação automática a cada 3 horas**, notificando o usuário sobre atualizações pendentes sem a necessidade de verificação manual.
+
+Interface de Terminal Corrigida: Ajuste completo nas caixas de texto e diálogos internos do terminal, eliminando erros de exibição e melhorando a legibilidade dos logs.
+
+Identidade Visual: Implementação oficial do novo ícone de alta resolução para integração total com menus de sistemas modernos.
+
+**📦 Instalação (AUR)**
+**O Arch Update Full está disponível no AUR. Esta é a forma recomendada de instalação para manter o software sempre atualizado.**
+Via yay:
+yay -S arch-update-full
+Via paru:
+paru -S arch-update-full
 
 # 🛠️ Arquitetura do Protocolo (Core Functions)
 
@@ -42,15 +57,6 @@ O **arch-update-full** executa uma sequência rigorosa de onze camadas de integr
 **Alertas desktop em tempo real sobre a disponibilidade de novas atualizações e a confirmação imediata ao concluir o protocolo de manutenção.**
 <img width="1425" height="588" alt="print notificaçao" src="https://github.com/user-attachments/assets/c84c3874-0940-4a60-bbc0-2943818cc826" />
 
-
----
-
-## 🚀 Instalação Oficial (AUR)
-# Disponível no AUR: yay -S arch-update-full
-<img width="1577" height="512" alt="Captura de tela de 2026-04-06 18-06-31" src="https://github.com/user-attachments/assets/b6552189-32b1-4e26-959e-908e77a4e55a" />
-
-
-
 ---
 ## 📸 Interface e Visual
 CLI: Estética Neon Blue com logs detalhados e assinatura personalizada.
@@ -60,13 +66,16 @@ Menu: Integração nativa com ambientes GNOME/KDE através do atalho customizado
 Demonstração Visual
 
 ### ⚡ Protocolo Sétimo em Ação
+<img width="1617" height="1053" alt="print1" src="https://github.com/user-attachments/assets/a6d40088-0e30-4f8e-92b7-161d77f51d30" />
+<img width="1617" height="1053" alt="print2" src="https://github.com/user-attachments/assets/7f698a04-61af-4b92-b656-8698368a8cdb" />
+<img width="1617" height="1053" alt="print3" src="https://github.com/user-attachments/assets/fabf4be0-e7d4-4e74-b1f6-facac26cb8b9" />
 
-<img width="1165" height="863" alt="print 1" src="https://github.com/user-attachments/assets/83e723d5-82b9-43d5-899e-d32b0fefaa9d" />
-<img width="1165" height="863" alt="print 2" src="https://github.com/user-attachments/assets/edaa0685-2c07-4f8e-84af-1e5871ad462f" />
-<img width="1165" height="863" alt="print 3 " src="https://github.com/user-attachments/assets/85753f93-36db-4e6e-b53d-38f77664a5ad" />
 
-### 🚀 Menu do Sistema (v3.5) — novo Ícone Personalizado
-<img width="771" height="768" alt="logoarchupdatefull" src="https://github.com/user-attachments/assets/cc7a29dd-01e7-49b2-95e6-01fd66eea14d" />
+
+
+### 🚀 Menu do Sistema (v3.6) — novo Ícone Personalizado
+
+<img width="114" height="120" alt="logoarchupdatefull" src="https://github.com/user-attachments/assets/f3229a30-43b3-42e5-94b4-dd3110b7203d" />
 
 
 
