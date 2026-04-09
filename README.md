@@ -1,4 +1,4 @@
- ## 🛡️ Arch Update Full (Protocolo Sentinela) **Versão 3.6**
+ #🛡️ Arch Update Full (Protocolo Sentinela) **Versão 3.6**
 
 **"Automação é a fundação da soberania digital."** > Script desenvolvido para centralizar a manutenção crítica de sistemas baseados em Arch Linux.
 
@@ -103,7 +103,7 @@ sudo cp arch-update-full.desktop /usr/share/applications/
 ```
 ---
 
-# 🚀 Arch Update Full - Protocolo Cyberpunk
+# 🚀 Arch Update Full - Protocolo Cyberpunk - - Protocolo Sentinela
 ### Desenvolvido por Gustavo Gianeli (Sétimo) 
 ### "Desenvolvido por The Sétimo — Onde a integridade encontra a performance."
 
