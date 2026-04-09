@@ -51,7 +51,7 @@ O **arch-update-full** executa uma sequência rigorosa de onze camadas de integr
 
 10. **Sentinel Logs (FIFO Rotation):** Sistema de telemetria com logs rotativos. O script mantém apenas as últimas 7 sessões de atualização, garantindo histórico para depuração sem poluir o armazenamento.
 
-11. **Protocolo de Notificação Universal:** Ao concluir a sequência de manutenção, o script dispara um alerta para a interface desktop via `libnotify`. Isso garante que, mesmo em outra área de trabalho ou focado em outros estudos, você receba a confirmação imediata de que o **Sentinel v3.5** finalizou a tarefa e o log foi gerado.
+11. **Protocolo de Notificação Universal:** Ao concluir a sequência de manutenção, o script dispara um alerta para a interface desktop via `libnotify`. Isso garante que, mesmo em outra área de trabalho ou focado em outros estudos, você receba a confirmação imediata de que o **Sentinel v3.6** finalizou a tarefa e o log foi gerado.
 
 ---
 
