@@ -1,17 +1,19 @@
-***🛡️ Arch Update Full (Protocolo Sentinela)*** **Versão 3.6**
+***🛡️ Arch Update Full (Protocolo Sentinela)*** **Versão 3.7-4**
 
 **"Automação é a fundação da soberania digital."** > Script desenvolvido para centralizar a manutenção crítica de sistemas baseados em Arch Linux.
 
-O arch-update-full evoluiu de um utilitário de manutenção para um Orquestrador de Integridade e Automação de Próxima Geração. Projetado para o ecossistema Arch Linux, ele transcende a simples atualização ao unificar a gestão de pacotes oficiais, AUR (Yay/Paru), Flatpaks e Snaps sob o Sentinel Protocol v3.6. Através de monitoramento em background via Systemd User Timers, auditoria em tempo real de Kernel/Drivers e um sistema de notificações inteligentes, ele garante que a estabilidade e a segurança do sistema operem de forma autônoma, silenciosa e com performance absoluta
+O arch-update-full evoluiu de um utilitário de manutenção para um Orquestrador de Integridade e Automação de Próxima Geração. Projetado para o ecossistema Arch Linux, ele transcende a simples atualização ao unificar a gestão de pacotes oficiais, AUR (Yay/Paru), Flatpaks e Snaps sob o Sentinel Protocol v3.7-4 Através de monitoramento em background via Systemd User Timers, auditoria em tempo real de Kernel/Drivers e um sistema de notificações inteligentes, ele garante que a estabilidade e a segurança do sistema operem de forma autônoma, silenciosa e com performance absoluta
 
-🚀 Novidades da Versão 3.6 (Protocolo Sentinela)
-Esta atualização foca em automação proativa e refinamento visual:
+🚀 Novidades: Arch Update Full v3.7-4 (Sentinel Update)
+Destaques da nova versão do protocolo de automação:
 
-Monitoramento Sentinela: O script agora conta com uma **verificação automática a cada 3 horas**, notificando o usuário sobre atualizações pendentes sem a necessidade de verificação manual.
+🛡️ Sentinel Mode (100% Fantasma): Implementação de um interceptador silencioso para o Systemd. Agora o sistema verifica atualizações em background sem abrir terminais ou vazar processos de interface.
 
-Interface de Terminal Corrigida: Ajuste completo nas caixas de texto e diálogos internos do terminal, eliminando erros de exibição e melhorando a legibilidade dos logs.
+📊 Telemetria Segregada: Criação de logs específicos e automáticos para as rondas do Sentinela, isolando o histórico de background das sessões manuais.
 
-Identidade Visual: Implementação oficial do novo ícone de alta resolução para integração total com menus de sistemas modernos.
+✅ Certificação ShellCheck: Código 100% validado e refatorado. Zero erros de sintaxe e lógica, garantindo estabilidade máxima no Bash.
+
+🧹 Aritmética Blindada: Correção no processamento de contagem de pacotes, eliminando bugs de espaços vazios no retorno dos comandos.
 
 **📦 Instalação (AUR)**
 **O Arch Update Full está disponível no AUR. Esta é a forma recomendada de instalação para manter o software sempre atualizado.**
@@ -24,14 +26,14 @@ Identidade Visual: Implementação oficial do novo ícone de alta resolução pa
 
 # 🛠️ Arquitetura do Protocolo (Core Functions)
 
-🛡️ Arch Update Full: Sentinel Protocol (v3.6)
-O arch-update-full evoluiu de um simples script para um ecossistema de manutenção autônomo. Agora, ele executa uma sequência rigorosa de 11 camadas de integridade e inteligência, garantindo que o seu Arch Linux esteja sempre na vanguarda da performance e segurança:
+🛡️ Arch Update Full: Sentinel Protocol (v3.7-4)
+O arch-update-full evoluiu de um simples script para um ecossistema de manutenção autônomo. Agora, ele executa uma sequência rigorosa de 13 camadas de integridade e inteligência, garantindo que o seu Arch Linux esteja sempre na vanguarda da performance e segurança:
 
-### 🚀 Camadas de Integridade e Inteligência (Sentinel Protocol v3.6)
+### 🚀 Camadas de Integridade e Inteligência (Sentinel Protocol v3.7-4)
 
 O **arch-update-full** executa uma sequência rigorosa de onze camadas de integridade: ele unifica a atualização de pacotes oficiais, AUR (com suporte a Yay e Paru), Flatpaks e Snaps, realizando uma limpeza profunda no sistema, auditoria de Kernel e drivers de vídeo, verificação de espaço em disco e agora conta com o **Modo Sentinela**, logs rotativos e notificações desktop de disponibilidade e conclusão.
 
-1. **Modo Sentinela (Silent Interception) [ATUALIZADO v3.6]: Implementação de monitoramento em segundo plano via Systemd User Timers. O sistema verifica atualizações silenciosamente **a cada 3 horas** e emite notificações nativas via libnotify apenas se houver novos pacotes disponíveis.
+1. **Modo Sentinela (Silent Interception)**: Implementação de monitoramento em segundo plano via Systemd User Timers. O sistema verifica atualizações silenciosamente **a cada 3 horas** e emite notificações nativas via libnotify apenas se houver novos pacotes disponíveis.
 
 2. **Auto-Instalação Dinâmica:** O script possui lógica de autoconfiguração. Ao ser executado, ele valida sua própria persistência no sistema, garantindo que o serviço Sentinela esteja sempre ativo, independente do diretório de instalação.
 
@@ -51,7 +53,14 @@ O **arch-update-full** executa uma sequência rigorosa de onze camadas de integr
 
 10. **Sentinel Logs (FIFO Rotation):** Sistema de telemetria com logs rotativos. O script mantém apenas as últimas 7 sessões de atualização, garantindo histórico para depuração sem poluir o armazenamento.
 
-11. **Protocolo de Notificação Universal:** Ao concluir a sequência de manutenção, o script dispara um alerta para a interface desktop via `libnotify`. Isso garante que, mesmo em outra área de trabalho ou focado em outros estudos, você receba a confirmação imediata de que o **Sentinel v3.6** finalizou a tarefa e o log foi gerado.
+11. **Protocolo de Notificação Universal:** Ao concluir a sequência de manutenção, o script dispara um alerta para a interface desktop via `libnotify`. Isso garante que, mesmo em outra área de trabalho ou focado em outros estudos, você receba a confirmação imediata de que o **Sentinel** finalizou a tarefa e o log foi gerado.
+    
+12. **📊 Sistema de Telemetria (Logs)**
+O protocolo mantém dois fluxos de logs independentes:
+**~/.logs_arch_update_full/:** Histórico completo das sessões manuais.
+**~/.logs_sentinel_check/:** Logs técnicos da ronda do sentinela (retenção de 3 versões).
+
+13. **Validação ShellCheck (Certificação de Qualidade)** O Padrão: O código foi passado pelo crivo do ShellCheck e saiu com zero erros. Resultado: Isso garante que a sintaxe do Bash está impecável, as variáveis estão protegidas com aspas e não há riscos de falhas silenciosas por má formação de comandos. É um código blindado.
 
 ---
 
@@ -68,16 +77,22 @@ Menu: Integração nativa com ambientes GNOME/KDE através do atalho customizado
 Demonstração Visual
 
 ### ⚡ Protocolo Sétimo em Ação
-<img width="1617" height="1053" alt="print1" src="https://github.com/user-attachments/assets/a6d40088-0e30-4f8e-92b7-161d77f51d30" />
-<img width="1617" height="1053" alt="print2" src="https://github.com/user-attachments/assets/7f698a04-61af-4b92-b656-8698368a8cdb" />
-<img width="1617" height="1053" alt="print3" src="https://github.com/user-attachments/assets/fabf4be0-e7d4-4e74-b1f6-facac26cb8b9" />
+<img width="1165" height="863" alt="print 1" src="https://github.com/user-attachments/assets/3cfa2620-f109-4e65-87a9-9da0094d9ae5" />
+<img width="1165" height="863" alt="print 2" src="https://github.com/user-attachments/assets/42fb18be-d516-4918-a6bd-03d6c4de7850" />
+<img width="1165" height="863" alt="print 3" src="https://github.com/user-attachments/assets/648287ab-8879-44f6-a521-ede113763281" />
 
 
 
-
-### 🚀 Menu do Sistema (v3.6) — novo Ícone Personalizado
+### 🚀 Menu do Sistema 
 
 <img width="114" height="120" alt="logoarchupdatefull" src="https://github.com/user-attachments/assets/f3229a30-43b3-42e5-94b4-dd3110b7203d" />
+
+
+### Pasta de logs:
+<img width="609" height="180" alt="pasta logs" src="https://github.com/user-attachments/assets/dd63a2f2-708c-490f-baef-e97028eb2ad2" />
+<img width="1337" height="773" alt="log check" src="https://github.com/user-attachments/assets/80f5efc6-c01e-4b93-bbcf-52ba1c9fab4d" />
+
+
 
 
 
