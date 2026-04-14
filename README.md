@@ -31,8 +31,6 @@ O arch-update-full evoluiu de um simples script para um ecossistema de manutenç
 
 ### 🚀 Camadas de Integridade e Inteligência (Sentinel Protocol v3.7-4)
 
-O **arch-update-full** executa uma sequência rigorosa de onze camadas de integridade: ele unifica a atualização de pacotes oficiais, AUR (com suporte a Yay e Paru), Flatpaks e Snaps, realizando uma limpeza profunda no sistema, auditoria de Kernel e drivers de vídeo, verificação de espaço em disco e agora conta com o **Modo Sentinela**, logs rotativos e notificações desktop de disponibilidade e conclusão.
-
 1. **Modo Sentinela (Silent Interception)**: Implementação de monitoramento em segundo plano via Systemd User Timers. O sistema verifica atualizações silenciosamente **a cada 3 horas** e emite notificações nativas via libnotify apenas se houver novos pacotes disponíveis.
 
 2. **Auto-Instalação Dinâmica:** O script possui lógica de autoconfiguração. Ao ser executado, ele valida sua própria persistência no sistema, garantindo que o serviço Sentinela esteja sempre ativo, independente do diretório de instalação.
