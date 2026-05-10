@@ -93,7 +93,8 @@ Demonstração Visual
 
 
 ### 🚀 Menu do Sistema (Novidade 3.8!) 
-<img width="64" height="64" alt="logoarchupdatefull" src="https://github.com/user-attachments/assets/e006d133-1c08-4efb-ad85-e80fa7e48935" />
+<img width="256" height="256" alt="logoarchupdatefull" src="https://github.com/user-attachments/assets/ad2f595a-1aa2-4a58-a0f6-cea5c65d67eb" />
+
 
 
 
