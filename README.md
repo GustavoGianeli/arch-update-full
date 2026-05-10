@@ -125,7 +125,7 @@ sudo cp arch-update-full /usr/bin/arch-update-full
 sudo chmod +x /usr/bin/arch-update-full
 
 # 2. Move o ícone para o diretório de pixmaps do sistema
-sudo cp logoarchupdatefull.png /usr/share/pixmaps/
+sudo cp sentinela-v38.png /usr/share/pixmaps/
 
 # 3. Instala o atalho no menu de aplicações (XDG)
 sudo cp arch-update-full.desktop /usr/share/applications/
