@@ -1,6 +1,6 @@
 🌐 **Languages / Idiomas:** <img src="https://flagcdn.com/16x12/us.png" alt="US"> **🇺🇸**  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR"> **🇧🇷**  [Português (BR)](README.pt-br.md)
 ---
-***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Versão 3.8**
+***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Version 3.8**
 ---
 
 **An advanced, lightweight, and fully automated maintenance tool built for Arch Linux. It centralizes your updates, performance tweaks, and system integrity checks.**
@@ -112,7 +112,7 @@ The protocol manages two independent log streams:
 ---
 <img width="256" height="256" alt="sentinela-v38" src="https://github.com/user-attachments/assets/fc7c7948-820a-434d-9c03-0e373a2b1e69" />
 
-### **📁 Log File Location: /home/$USER/.** *(Hidden file)*
+### **📁 Log File Location: /home/$USER/.** (~/.logs_arch_update_full/  &  ~/.logs_sentinel_check/)
 ---
 <img width="325" height="180" alt="pasta de logs" src="https://github.com/user-attachments/assets/ca450a3c-da95-4c5f-a6ba-e4d972e9030e" />
 <img width="2012" height="1288" alt="logs script completo" src="https://github.com/user-attachments/assets/e06d5d27-fa6b-4eb0-9aca-21aee2b79419" />
@@ -138,7 +138,7 @@ makepkg -si
 **1. Inject the script into your system PATH:**
 ```bash
 sudo cp arch-update-full /usr/bin/arch-update-full
-sudo chmod 765 /usr/bin/arch-update-full
+sudo chmod 755 /usr/bin/arch-update-full
 ```
 **2. Move the icon to the system pixmaps directory:**
 ```bash
