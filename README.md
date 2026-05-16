@@ -1,4 +1,4 @@
-🌐 **Languages / Idiomas:** <img src="https://flagcdn.com/16x12/us.png" alt="US"> **🇺🇸**  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR"> **🇧🇷**  [Português (BR)](README.pt-br.md)
+🌐 **Languages / Idiomas:** <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">   [Português (BR)](README.pt-br.md)
 ---
 ***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Version 3.8**
 ---
