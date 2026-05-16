@@ -99,7 +99,7 @@ The protocol manages two independent log streams:
 
 **Menu: Native desktop integration through a custom application shortcut.**
 
-### **⚡ Sentinel Protocol in Action**
+### **⚡ Sentinel Protocol in Action : ⬇**
 ---
 <img width="1433" height="1033" alt="cap1" src="https://github.com/user-attachments/assets/5a95455a-2708-4bfb-8f2b-a31dd3185c52" />
 <img width="1433" height="1033" alt="cap2" src="https://github.com/user-attachments/assets/7de9989b-4221-4f56-b3b3-6ee3bab39db4" />
@@ -153,8 +153,10 @@ sudo cp arch-update-full.desktop /usr/share/applications/
 **🚀 Arch Update Full - - - Sentinel Protocol**
 
 ---
-### **𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓭 𝓫𝔂 𝓖𝓾𝓼𝓽𝓪𝓿𝓸 𝓖𝓲𝓪𝓷𝓮𝓵𝓲  (𝓣𝓱𝓮 𝓢𝓮𝓿𝓮𝓷𝓽𝓱)** 
-**" 𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓭 𝓫𝔂 𝓣𝓱𝓮 𝓢𝓮𝓿𝓮𝓷𝓽𝓱 — 𝓦𝓱𝓮𝓻𝓮 𝓲𝓷𝓽𝓮𝓰𝓻𝓲𝓽𝔂 𝓶𝓮𝓮𝓽𝓼 𝓹𝓮𝓻𝓯𝓸𝓻𝓶𝓪𝓷𝓬𝓮. "**
+### **𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓭 𝓫𝔂 𝓖𝓾𝓼𝓽𝓪𝓿𝓸 𝓖𝓲𝓪𝓷𝓮𝓵𝓲  (𝓣𝓱𝓮 𝓢𝓮𝓿𝓮𝓷𝓽𝓱)**  
+
+**" 𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓭 𝓫𝔂 𝓣𝓱𝓮 𝓢𝓮𝓿𝓮𝓷𝓽𝓱 — 𝓦𝓱𝓮𝓻𝓮 𝓲𝓷𝓽𝓮𝓰𝓻𝓲𝓽𝔂 𝓶𝓮𝓮𝓽𝓼 𝓹𝓮𝓻𝓯𝓸𝓻𝓶𝓪𝓷𝓬𝓮. 🍀 "**
+
 ---
 
 🛡️ Developer Profile (Red Team Focus)
