@@ -1,4 +1,4 @@
-🌐 **Languages / Idiomas:** <img src="https://flagcdn.com/16x12/us.png" alt="US"> **🇺🇸**  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR"> **🇧🇷**  [Português (BR)](README.pt-br.md)
+ <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">  [Português (BR)](README.pt-br.md)
 ---
 ***🛡️ Arch Update Full (Protocolo Sentinela)🔄*** **Versão 3.8**
 ---
@@ -24,12 +24,12 @@ Destaques da nova versão do protocolo de automação:
 ✅ **Certificação ShellCheck: Código 100% validado**. Zero erros de sintaxe e lógica, garantindo estabilidade máxima no Bash.
 
 ---
-**📦 Instalação (AUR): O Arch Update Full está disponível no AUR. Esta é a forma recomendada de instalação para manter o software sempre atualizado.🔄🛡️**
+**📦 Instalação (AUR): O Arch Update Full está disponível no AUR. Esta é a forma recomendada de instalação para manter o software sempre atualizado.**
 ---
 
 **👉  Link do pacote no AUR:https://aur.archlinux.org/packages/arch-update-full**
 
-**⚠️ Nota sobre a versão no AUR:** No repositório do AUR, o pacote encontra-se na versão 3.8-7. O sufixo -7 representa apenas revisões de empacotamento (pkgrel) feitas durante o deploy (como correções de checksums e caminhos de ícones). O código-fonte principal e as funcionalidades permanecem exatamente os mesmos da versão 3.8 estável deste repositório.❗
+**⚠️ Nota sobre a versão no AUR:** No repositório do AUR, o pacote encontra-se na versão 3.8-7. O sufixo -7 representa apenas revisões de empacotamento (pkgrel) feitas durante o deploy (como correções de checksums e caminhos de ícones). O código-fonte principal e as funcionalidades permanecem exatamente os mesmos da versão 3.8 estável deste repositório.
 
 
 ### 🚀 **Instalação Rápida (AUR Helpers)**
@@ -45,7 +45,7 @@ paru -S arch-update-full
 ```
 
 ---
-# **🛠️ Arquitetura do Protocolo (Core Functions):**
+# **Arquitetura do Protocolo (Core Functions):**
 **🛡️ Arch Update Full: Sentinel Protocol (v3.8)**
 
 O arch-update-full evoluiu de um simples script para um ecossistema de manutenção autônomo. Agora, ele executa uma sequência rigorosa de 14 camadas de integridade e inteligência, garantindo que o seu Arch Linux esteja sempre na vanguarda da performance e segurança:
@@ -74,17 +74,17 @@ O arch-update-full evoluiu de um simples script para um ecossistema de manutenç
 
 11. **Protocolo de Notificação Universal:** Ao concluir a sequência de manutenção ou achar uma atualização (modo sentinela ghost), o script dispara um alerta para a interface desktop via `libnotify`. Isso garante que, em **qualquer interface, desktop environment (DE)** mesmo em outra área de trabalho ou focado em outros estudos, você receba a confirmação imediata de que o **Sentinel** finalizou a tarefa ou se alguma atualição foi detectada e que os logs foram gerados.
     
-12. **📊 Sistema de Telemetria (Logs)**
+12. **Sistema de Telemetria (Logs)**
 O protocolo mantém dois fluxos de logs independentes:
 **~/.logs_arch_update_full/:** Histórico completo das sessões manuais. (retenção de 13 versões)
 **~/.logs_sentinel_check/:** Logs técnicos da ronda do sentinela (retenção de 3 versões).
 
 13. **Validação ShellCheck (Certificação de Qualidade)** O Padrão: O código foi passado pelo crivo do ShellCheck e saiu com zero erros. Resultado: Isso garante que a sintaxe do Bash está impecável, as variáveis estão protegidas com aspas e não há riscos de falhas silenciosas por má formação de comandos. É um código blindado.
 
-14.**⚡Smart Connectivity Gatekeeper:** Sistema de pré-verificação de uplink que valida a conexão antes de iniciar processos críticos, evitando timeouts e corrupção de base de dados.
+14.**Smart Connectivity Gatekeeper:** Sistema de pré-verificação de uplink que valida a conexão antes de iniciar processos críticos, evitando timeouts e corrupção de base de dados.
 
 ---
-### 🔔 Notificações Inteligentes
+**Notificações Inteligentes**
 ---
 
 **Alertas desktop em tempo real sobre a disponibilidade de novas atualizações e a confirmação imediata ao concluir o protocolo de manutenção.**
@@ -94,13 +94,12 @@ O protocolo mantém dois fluxos de logs independentes:
 
 
 ---
-## **📸 Interface e Visual :**
+## **Interface e Visual :**
 **CLI: Estética Neon Blue com logs detalhados e assinatura personalizada.**
 
 **Menu: Integração nativa com os ambientes através do atalho customizado.**
 
-Demonstração Visual 
-### **⚡ Protocolo Sentinela em Ação: ⬇** 
+ **⚡ Protocolo Sentinela em Ação:** 
 ---
 <img width="1433" height="1033" alt="cap1" src="https://github.com/user-attachments/assets/ad003aba-a45e-41a9-a316-e1aea8b07aaa" />
 <img width="1433" height="1033" alt="cap2" src="https://github.com/user-attachments/assets/ac6b51c9-67dd-4d05-9027-32059575dde9" />
@@ -121,7 +120,7 @@ Demonstração Visual
 <img width="2012" height="1288" alt="logs do sentinela" src="https://github.com/user-attachments/assets/6e383cce-85ad-4572-940f-4035da5808bd" />
 
 ---
-### 🚀 **⚠️RECOMENDAMOS INSTALAR VIA PACOTE AUR⚠️** 
+**⚠️RECOMENDAMOS INSTALAR VIA PACOTE AUR⚠️** 
 
 **...mas se prefirir fazer manualmente...**
 
@@ -150,12 +149,10 @@ sudo cp sentinela-v38.png /usr/share/pixmaps/
 sudo cp arch-update-full.desktop /usr/share/applications/
 ```
 
-**🚀 Arch Update Full - - - Protocolo Sentinela**
-
 ---
-**𝓓𝓮𝓼𝓮𝓷𝓿𝓸𝓵𝓿𝓲𝓭𝓸  𝓹𝓸𝓻  𝓖𝓾𝓼𝓽𝓪𝓿𝓸  𝓖𝓲𝓪𝓷𝓮𝓵𝓲  (𝓢é𝓽𝓲𝓶𝓸)🔱**
+**𝓓𝓮𝓼𝓮𝓷𝓿𝓸𝓵𝓿𝓲𝓭𝓸  𝓹𝓸𝓻  𝓖𝓾𝓼𝓽𝓪𝓿𝓸  𝓖𝓲𝓪𝓷𝓮𝓵𝓲  (𝓢é𝓽𝓲𝓶𝓸)**
 
-**"𝓓𝓮𝓼𝓮𝓷𝓿𝓸𝓵𝓿𝓲𝓭𝓸  𝓹𝓸𝓻  𝓣𝓱𝓮 𝓢é𝓽𝓲𝓶𝓸  —  𝓸𝓷𝓭𝓮  𝓪  𝓲𝓷𝓽𝓮𝓰𝓻𝓲𝓭𝓪𝓭𝓮  𝓮𝓷𝓬𝓸𝓷𝓽𝓻𝓪  𝓪  𝓹𝓮𝓻𝓯𝓸𝓻𝓶𝓪𝓷𝓬𝓮.🍀"**
+**"𝓓𝓮𝓼𝓮𝓷𝓿𝓸𝓵𝓿𝓲𝓭𝓸  𝓹𝓸𝓻  𝓣𝓱𝓮 𝓢é𝓽𝓲𝓶𝓸  —  𝓸𝓷𝓭𝓮  𝓪  𝓲𝓷𝓽𝓮𝓰𝓻𝓲𝓭𝓪𝓭𝓮  𝓮𝓷𝓬𝓸𝓷𝓽𝓻𝓪  𝓪  𝓹𝓮𝓻𝓯𝓸𝓻𝓶𝓪𝓷𝓬𝓮."**
 
 ---
 
