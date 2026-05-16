@@ -1,4 +1,4 @@
-🌐 **Languages / Idiomas:** <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">   [Português (BR)](README.pt-br.md)
+ <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">   [Português (BR)](README.pt-br.md)
 ---
 ***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Version 3.8**
 ---
@@ -24,12 +24,12 @@
 **✅ ShellCheck Certified: 100% validated code**. Zero syntax or logic errors, ensuring maximum stability on Bash.
 
 --- 
-**📦 Installation (AUR): **Arch Update Full is available on the AUR. This is the recommended installation method because it ensures the package** itself stays updated through the AUR repository. 🔄🛡️**
+**📦 Installation (AUR): **Arch Update Full is available on the AUR. This is the recommended installation method because it ensures the package** itself stays updated through the AUR repository.**
 --- 
 
 **👉  Official AUR Repository: https://aur.archlinux.org/packages/arch-update-full**
 
-**⚠️ AUR Version Note:** In the AUR repository, the package is currently at version 3.8-7. The -7 suffix represents purely packaging revisions (pkgrel) made during deployment (such as checksum fixes and icon path adjustments). The core source code and features remain identical to the stable 3.8 release found in this repository.❗
+**⚠️ AUR Version Note:** In the AUR repository, the package is currently at version 3.8-7. The -7 suffix represents purely packaging revisions (pkgrel) made during deployment (such as checksum fixes and icon path adjustments). The core source code and features remain identical to the stable 3.8 release found in this repository.
 
 
 ### 🚀 **Quick Installation (AUR Helpers)**
@@ -45,7 +45,7 @@ paru -S arch-update-full
 ```
 
 ---
-# **🛠️ Protocol Architecture (Core Functions)**
+# **Protocol Architecture (Core Functions)**
 **🛡️ Arch Update Full: Sentinel Protocol (v3.8)**
 
 arch-update-full evolved from a simple script into an autonomous maintenance ecosystem. It runs a strict sequence of 14 integrity and intelligence layers, making sure your Arch Linux setup stays at peak performance and security:
@@ -74,17 +74,17 @@ arch-update-full evolved from a simple script into an autonomous maintenance eco
 
 11. **Universal Notification Protocol:** When the maintenance cycle finishes or finds an update (in ghost/sentinel mode), the script fires a desktop alert via `libnotify`. This ensures that on **any desktop environment (DE) or window manager**, even if you are on another workspace or focused on your studies, you get immediate confirmation that **Sentinel** completed its task, updates were detected, and logs were generated.
 
-12. **📊 Telemetry System (Logs)**
+12. **Telemetry System (Logs)**
 The protocol manages two independent log streams:
 * `~/.logs_arch_update_full/` -> Full history of manual sessions (retains 13 versions).
 * `~/.logs_sentinel_check/` -> Technical logs of background Sentinel rounds (retains 3 versions).
 
 13. **ShellCheck Validation (Quality Certification):** The code was run through ShellCheck and passed with zero errors. This guarantees flawless Bash syntax, properly quoted variables, and eliminates the risk of silent failures from bad commands. Fully armored code.
 
-14. **⚡ Smart Connectivity Gatekeeper:** A pre-verification network system that checks your connection before starting critical processes, preventing timeouts and database corruption.
+14. **Smart Connectivity Gatekeeper:** A pre-verification network system that checks your connection before starting critical processes, preventing timeouts and database corruption.
 
 --- 
-### 🔔 Smart Notifications
+**Smart Notifications**
 ---
 
 **Real-time desktop alerts for new update availability and instant confirmation as soon as the maintenance cycle finishes.**
@@ -94,12 +94,12 @@ The protocol manages two independent log streams:
 
 
 ---
-## **📸 UI & Visuals**
+## **UI & Visuals**
 **CLI: Neon Blue aesthetics featuring detailed logs and a custom signature.**
 
 **Menu: Native desktop integration through a custom application shortcut.**
 
-### **⚡ Sentinel Protocol in Action : ⬇**
+### **⚡ Sentinel Protocol in Action :**
 ---
 <img width="1433" height="1033" alt="cap1" src="https://github.com/user-attachments/assets/5a95455a-2708-4bfb-8f2b-a31dd3185c52" />
 <img width="1433" height="1033" alt="cap2" src="https://github.com/user-attachments/assets/7de9989b-4221-4f56-b3b3-6ee3bab39db4" />
@@ -120,7 +120,7 @@ The protocol manages two independent log streams:
 
 
 ---
-### 🚀 **⚠️ WE HIGHLY RECOMMEND INSTALLING VIA THE AUR PACKAGE⚠️**
+**⚠️ WE HIGHLY RECOMMEND INSTALLING VIA THE AUR PACKAGE⚠️**
 
 ***...but if you prefer doing it manually...***
 
@@ -150,12 +150,9 @@ sudo cp arch-update-full.desktop /usr/share/applications/
 ```
 ---
 
-**🚀 Arch Update Full - - - Sentinel Protocol**
-
----
 ### **𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓭 𝓫𝔂 𝓖𝓾𝓼𝓽𝓪𝓿𝓸 𝓖𝓲𝓪𝓷𝓮𝓵𝓲  (𝓣𝓱𝓮 𝓢𝓮𝓿𝓮𝓷𝓽𝓱)**  
 
-**" 𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓭 𝓫𝔂 𝓣𝓱𝓮 𝓢𝓮𝓿𝓮𝓷𝓽𝓱 — 𝓦𝓱𝓮𝓻𝓮 𝓲𝓷𝓽𝓮𝓰𝓻𝓲𝓽𝔂 𝓶𝓮𝓮𝓽𝓼 𝓹𝓮𝓻𝓯𝓸𝓻𝓶𝓪𝓷𝓬𝓮. 🍀 "**
+**" 𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓭 𝓫𝔂 𝓣𝓱𝓮 𝓢𝓮𝓿𝓮𝓷𝓽𝓱 — 𝓦𝓱𝓮𝓻𝓮 𝓲𝓷𝓽𝓮𝓰𝓻𝓲𝓽𝔂 𝓶𝓮𝓮𝓽𝓼 𝓹𝓮𝓻𝓯𝓸𝓻𝓶𝓪𝓷𝓬𝓮. "**
 
 ---
 
@@ -171,4 +168,4 @@ sudo cp arch-update-full.desktop /usr/share/applications/
 
 **Location:** Ourinhos, SP - Brazil
 
-### ***⚠️ ​🌐❗Language & Transparency Log: This documentation was originally created by me in Portuguese. Since I am a Computer Science student and currently an English beginner, about 80% of this README was translated and verified with AI assistance, then fully reviewed and adjusted by myself. Please excuse any minor translation bugs. Using technology every day to reach a global audience ! 🚀❗🙏🍃***
+**⚠️ ​Language & Transparency Log: This documentation was originally created by me in Portuguese. Since I am a Computer Science student and currently an English beginner, about 80% of this README was translated and verified with AI assistance, then fully reviewed and adjusted by myself. Using technology every day to reach a global audience !⚠️**
