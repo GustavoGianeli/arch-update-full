@@ -35,11 +35,11 @@ Destaques da nova versão do protocolo de automação:
 ### 🚀 Instalação Rápida (AUR Helpers)
 Escolha o seu gerenciador do AUR de preferência para sincronizar e instalar o pacote automaticamente:
 
- **Instalação via Yay:** 
+ #**Instalação via Yay:** 
 ```bash
 yay -S arch-update-full
 ```
- **Instalação via Paru:**
+ #**Instalação via Paru:**
 ```bash
 paru -S arch-update-full
 ```
@@ -119,8 +119,8 @@ Demonstração Visual :
 <img width="2012" height="1288" alt="logs do sentinela" src="https://github.com/user-attachments/assets/6e383cce-85ad-4572-940f-4035da5808bd" />
 
 ---
-### 🚀 **RECOMENDAMOS INSTALAR VIA PACOTE AUR** mas se prefirir fazer manualmente
-# Como Instalar Manualmente
+### 🚀 **RECOMENDAMOS INSTALAR VIA PACOTE AUR** mas se prefirir fazer manualmente...
+**Como Instalar Manualmente:**
 ---
 
 Para usar o script como um comando nativo e ter o atalho no seu menu de aplicativos, execute os seguintes comandos:
@@ -129,7 +129,7 @@ git clone https://aur.archlinux.org/arch-update-full.git
 cd arch-update-full
 makepkg -si
 ```
-Ou se preferir...
+Ou se preferir fazer o desdobramento dos arquivos de forma direta e manual:
 
 **1. Injeta o script no path do sistema:**
 ```bash
@@ -148,18 +148,21 @@ sudo cp arch-update-full.desktop /usr/share/applications/sentinela-v38.png
 *🚀 Arch Update Full - - - Protocolo Sentinela
 
 ---
-### **𝒟ℯ𝓈ℯ𝓃𝓋ℴ𝓁𝓋𝒾𝒹ℴ 𝓅ℴ𝓇 𝒢𝓊𝓈𝓉𝒶𝓋ℴ 𝒢𝒾𝒶𝓃ℯ𝓁𝒾 (𝒮é𝓉𝒾𝓂ℴ)**  
-### **"𝒟ℯ𝓈ℯ𝓃𝓋ℴ𝓁𝓋𝒾𝒹ℴ 𝓅ℴ𝓇 𝒯𝒽ℯ 𝒮é𝓉𝒾𝓂ℴ — 𝒪𝓃𝒹ℯ 𝒶 𝒾𝓃𝓉ℯℊ𝓇𝒾𝒹𝒶𝒹ℯ ℯ𝓃𝒸ℴ𝓃𝓉𝓇𝒶 𝒶 𝓅ℯ𝓇𝒻ℴ𝓇𝓂𝒶𝓃𝒸ℯ."**
+### **𝒟ℯ𝓈ℯ𝓃𝓋ℴ𝓁𝓋𝒾𝒹ℴ 𝓅ℴ𝓇 𝒢𝓊𝓈𝓉𝒶𝓋ℴ 𝒢𝒾𝒶𝓃ℯ𝓁𝒾 (𝒮é𝓉𝒾𝓂ℴ)**
+**"𝒟ℯ𝓈ℯ𝓃𝓋ℴ𝓁𝓋𝒾𝒹ℴ 𝓅ℴ𝓇 𝒯𝒽ℯ 𝒮é𝓉𝒾𝓂ℴ — 𝒪𝓃𝒹ℯ 𝒶 𝒾𝓃𝓉ℯℊ𝓇𝒾𝒹𝒶𝒹ℯ ℯ𝓃𝒸ℴ𝓃𝓉𝓇𝒶 𝒶 𝓅ℯ𝓇𝒻ℴ𝓇𝓂𝒶𝓃𝒸ℯ."**
 ---
 
-🛡️ Developer Profile (Red Team Focus)
-"Projeto focado em Automação Shell das Atualizações da Base Arch"
- Autor: Gustavo Gianeli (Sétimo)
- Estudante de Ciência da Computação
+**🛡️ Developer Profile (Red Team Focus)**
 
- Hardware: Acer Nitro V15 | i7 13th Gen | RTX 4050 | 32GB RAM
- Location: Ourinhos, SP - Brazil
+**Foco do Projeto:** Automação Shell para Manutenção e Auditoria da Base Arch Linux.
 
+**Autor:** Gustavo Gianeli (Sétimo)
+
+**Educação:** Estudante de Ciência da Computação (entusiasta de Linux e fuçador)
+
+**Hardware:** Acer Nitro V15 | i7 13th Gen | RTX 4050 | 32GB RAM
+
+**Localização:** Ourinhos, SP - Brazil
 
 
 
