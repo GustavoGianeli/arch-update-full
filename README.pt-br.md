@@ -8,45 +8,46 @@
 **Arch-Update-Full: O Protocolo de Elite para Gestão de Atualizações do Arch Linux. Sincronização inteligente de Pacman, AUR e Flatpaks e Snaps,  com auditoria de integridade em tempo real. Automação absoluta, incluído tudo que é preciso para atualização e manutenções de rotina ( pacote órfãos e cache).**
 
 ---
-🚀 Novidades: Arch Update Full v3.8 (Sentinel Update)
+**🚀 Novidades: Arch Update Full v3.8 (Sentinel Update)**
 Destaques da nova versão do protocolo de automação:
 
-⚡ Smart Connectivity Gatekeeper: Sistema de pré-verificação de uplink que valida a conexão antes de iniciar processos críticos, evitando timeouts e corrupção de base de dados.
+**⚡ Smart Connectivity Gatekeeper:** Sistema de pré-verificação de uplink que valida a conexão antes de iniciar processos críticos, evitando timeouts e corrupção de base de dados.
 
-📊 Real-time Latency Telemetry: Extração precisa de latência via AWK, exibindo o status da rede em milissegundos (ms) diretamente na interface.
+**📊 Real-time Latency Telemetry:** Extração precisa de latência via AWK, exibindo o status da rede em milissegundos (ms) diretamente na interface.
 
-🎨 Redesign de Interface (Block Edition): Next-Gen UI Architecture: Implementação da interface Block Edition, utilizando molduras de caracteres duplos e alinhamento dinâmico para uma experiência de terminal imersiva e profissional.
+**🎨 Redesign de Interface (Block Edition):** Next-Gen UI Architecture: Implementação da interface Block Edition, utilizando molduras de caracteres duplos e alinhamento dinâmico para uma experiência de terminal imersiva e profissional.
 
-🧹 Correção do bug dos Pacotes Órfãos
+**🧹 Correção do bug dos Pacotes Órfãos**
 
-🛡️Conflict Mediation: Remoção estratégica da flag --noconfirm no ambiente Pacman para permitir a validação humana em mudanças críticas de pacotes, mantendo a integridade total do Arch Linux.
+**🛡️Conflict Mediation:** Remoção estratégica da flag --noconfirm no ambiente Pacman para permitir a validação humana em mudanças críticas de pacotes, mantendo a integridade total do Arch Linux.
 
 ✅ **Certificação ShellCheck: Código 100% validado**. Zero erros de sintaxe e lógica, garantindo estabilidade máxima no Bash.
 
 ---
+**📦 Instalação (AUR): O Arch Update Full está disponível no AUR. Esta é a forma recomendada de instalação para manter o software sempre atualizado.🔄🛡️**
+---
 
-**📦 Instalação (AUR)**
-**O Arch Update Full está disponível no AUR**. Esta é a **forma recomendada de instalação** para manter o software sempre atualizado.
+**👉  Link do pacote no AUR:https://aur.archlinux.org/packages/arch-update-full**
 
-**📌Link do pacote no AUR:** **https://aur.archlinux.org/packages/arch-update-full**
+**⚠️ Nota sobre a versão no AUR:** No repositório do AUR, o pacote encontra-se na versão 3.8-7. O sufixo -7 representa apenas revisões de empacotamento (pkgrel) feitas durante o deploy (como correções de checksums e caminhos de ícones). O código-fonte principal e as funcionalidades permanecem exatamente os mesmos da versão 3.8 estável deste repositório.❗
 
-**⚠️ Nota sobre a versão no AUR:** No repositório do AUR, o pacote encontra-se na versão 3.8-7. O sufixo -7 representa apenas revisões de empacotamento (pkgrel) feitas durante o deploy (como correções de checksums e caminhos de ícones). O código-fonte principal e as funcionalidades permanecem exatamente os mesmos da versão 3.8 estável deste repositório.
 
-### 🚀 Instalação Rápida (AUR Helpers)
-Escolha o seu gerenciador do AUR de preferência para sincronizar e instalar o pacote automaticamente:
+### 🚀 **Instalação Rápida (AUR Helpers)**
+**Escolha o seu gerenciador do AUR de preferência para sincronizar e instalar o pacote automaticamente:**
 
- #**Instalação via Yay:** 
+ **➡ Instalação via Yay:** 
 ```bash
 yay -S arch-update-full
 ```
- #**Instalação via Paru:**
+ **➡ Instalação via Paru:**
 ```bash
 paru -S arch-update-full
 ```
 
 ---
-# 🛠️ Arquitetura do Protocolo (Core Functions):
-🛡️ Arch Update Full: Sentinel Protocol (v3.8)
+# **🛠️ Arquitetura do Protocolo (Core Functions):**
+**🛡️ Arch Update Full: Sentinel Protocol (v3.8)**
+
 O arch-update-full evoluiu de um simples script para um ecossistema de manutenção autônomo. Agora, ele executa uma sequência rigorosa de 14 camadas de integridade e inteligência, garantindo que o seu Arch Linux esteja sempre na vanguarda da performance e segurança:
 
 ### 🚀 Camadas de Integridade e Inteligência (Sentinel Protocol)
@@ -92,13 +93,14 @@ O protocolo mantém dois fluxos de logs independentes:
 <img width="1774" height="643" alt="captura protocolo concluido" src="https://github.com/user-attachments/assets/ebb01beb-f0a1-4224-a2a3-037636158249" />
 
 
+---
+## **📸 Interface e Visual :**
+**CLI: Estética Neon Blue com logs detalhados e assinatura personalizada.**
 
-## 📸 Interface e Visual :
-CLI: Estética Neon Blue com logs detalhados e assinatura personalizada.
-Menu: Integração nativa com os ambientes através do atalho customizado.
+**Menu: Integração nativa com os ambientes através do atalho customizado.**
 
-Demonstração Visual :
-### ⚡ Protocolo Sétimo em Ação 
+Demonstração Visual 
+### **⚡ Protocolo Sentinela em Ação: ⬇** 
 ---
 <img width="1433" height="1033" alt="cap1" src="https://github.com/user-attachments/assets/ad003aba-a45e-41a9-a316-e1aea8b07aaa" />
 <img width="1433" height="1033" alt="cap2" src="https://github.com/user-attachments/assets/ac6b51c9-67dd-4d05-9027-32059575dde9" />
@@ -107,34 +109,37 @@ Demonstração Visual :
 <img width="1433" height="1033" alt="cap5" src="https://github.com/user-attachments/assets/0fcea070-2bc4-4c2f-8ce0-6dcdbb3df2a0" />
 
 
-### 🚀 Menu do Sistema (Novidade 3.8!) 
+### **🚀 Menu do Sistema (Novidade 3.8!)** 
 ---
 <img width="256" height="256" alt="sentinela-v38" src="https://github.com/user-attachments/assets/1475fb9f-b6cd-42e0-a6ae-64e17270cbdc" />
 
-
-### **📁 Localização dos arquivos de Logs: /home/$USER/. (arquivo oculto)**
+---
+### **📁 Localização dos arquivos de Logs: /home/$USER/. (arquivo oculto) (~/.logs_arch_update_full/ & ~/.logs_sentinel_check/)**
 ---
 <img width="325" height="180" alt="pasta de logs" src="https://github.com/user-attachments/assets/f62cefa6-c59f-4f41-9571-3389a2c1075c" />
 <img width="2012" height="1288" alt="logs script completo" src="https://github.com/user-attachments/assets/23425720-bc8d-49be-ac76-51031f53ff46" />
 <img width="2012" height="1288" alt="logs do sentinela" src="https://github.com/user-attachments/assets/6e383cce-85ad-4572-940f-4035da5808bd" />
 
 ---
-### 🚀 **RECOMENDAMOS INSTALAR VIA PACOTE AUR** mas se prefirir fazer manualmente...
+### 🚀 **⚠️RECOMENDAMOS INSTALAR VIA PACOTE AUR⚠️** 
+
+**...mas se prefirir fazer manualmente...**
+
 **Como Instalar Manualmente:**
 ---
 
-Para usar o script como um comando nativo e ter o atalho no seu menu de aplicativos, execute os seguintes comandos:
+**➡ Para usar o script como um comando nativo e ter o atalho no seu menu de aplicativos, execute os seguintes comandos:**
 ```bash
 git clone https://aur.archlinux.org/arch-update-full.git
 cd arch-update-full
 makepkg -si
 ```
-Ou se preferir fazer o desdobramento dos arquivos de forma direta e manual:
+**➡ Ou se preferir fazer o desdobramento dos arquivos de forma direta e manual:**
 
 **1. Injeta o script no path do sistema:**
 ```bash
 sudo cp arch-update-full /usr/bin/arch-update-full
-sudo chmod 765 /usr/bin/arch-update-full
+sudo chmod 755 /usr/bin/arch-update-full
 ```
 **2. Move o ícone para o diretório de pixmaps do sistema:**
 ```bash
@@ -142,14 +147,16 @@ sudo cp sentinela-v38.png /usr/share/pixmaps/
 ```
 **3. Instala o atalho no menu de aplicações (XDG):**
 ```bash
-sudo cp arch-update-full.desktop /usr/share/applications/sentinela-v38.png
+sudo cp arch-update-full.desktop /usr/share/applications/
 ```
 
-*🚀 Arch Update Full - - - Protocolo Sentinela
+**🚀 Arch Update Full - - - Protocolo Sentinela**
 
 ---
-### **𝒟ℯ𝓈ℯ𝓃𝓋ℴ𝓁𝓋𝒾𝒹ℴ 𝓅ℴ𝓇 𝒢𝓊𝓈𝓉𝒶𝓋ℴ 𝒢𝒾𝒶𝓃ℯ𝓁𝒾 (𝒮é𝓉𝒾𝓂ℴ)**
-**"𝒟ℯ𝓈ℯ𝓃𝓋ℴ𝓁𝓋𝒾𝒹ℴ 𝓅ℴ𝓇 𝒯𝒽ℯ 𝒮é𝓉𝒾𝓂ℴ — 𝒪𝓃𝒹ℯ 𝒶 𝒾𝓃𝓉ℯℊ𝓇𝒾𝒹𝒶𝒹ℯ ℯ𝓃𝒸ℴ𝓃𝓉𝓇𝒶 𝒶 𝓅ℯ𝓇𝒻ℴ𝓇𝓂𝒶𝓃𝒸ℯ."**
+**𝓓𝓮𝓼𝓮𝓷𝓿𝓸𝓵𝓿𝓲𝓭𝓸  𝓹𝓸𝓻  𝓖𝓾𝓼𝓽𝓪𝓿𝓸  𝓖𝓲𝓪𝓷𝓮𝓵𝓲  (𝓢é𝓽𝓲𝓶𝓸)🔱**
+
+**"𝓓𝓮𝓼𝓮𝓷𝓿𝓸𝓵𝓿𝓲𝓭𝓸  𝓹𝓸𝓻  𝓣𝓱𝓮 𝓢é𝓽𝓲𝓶𝓸  —  𝓸𝓷𝓭𝓮  𝓪  𝓲𝓷𝓽𝓮𝓰𝓻𝓲𝓭𝓪𝓭𝓮  𝓮𝓷𝓬𝓸𝓷𝓽𝓻𝓪  𝓪  𝓹𝓮𝓻𝓯𝓸𝓻𝓶𝓪𝓷𝓬𝓮.🍀"**
+
 ---
 
 **🛡️ Developer Profile (Red Team Focus)**
