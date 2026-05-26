@@ -160,7 +160,7 @@ sudo cp arch-update-full.desktop /usr/share/applications/
 
 **Foco do Projeto:** Automação Shell para Manutenção e Auditoria da Base Arch Linux.
 
-**Autor:** Gustavo Gianeli (Sétimo)
+**Autor:** Gustavo Gianeli (O Sétimo)
 
 **Educação:** Estudante de Ciência da Computação (entusiasta de Linux e fuçador)
 
