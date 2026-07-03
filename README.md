@@ -1,35 +1,42 @@
  <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">   [Português (BR)](README.pt-br.md)
 ---
-***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Version 3.8**
+***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Version 3.9**
 ---
 
 **An advanced, lightweight, and fully automated maintenance tool built for Arch Linux. It centralizes your updates, performance tweaks, and system integrity checks.**
 
-**Arch-Update-Full: The ultimate management protocol for Arch Linux updates. Smart sync across Pacman, AUR, Flatpaks, and Snaps with real-time integrity auditing. Full automation that handles everything you need for routine updates and system maintenance (orphan packages and cache cleanup).**
+**Arch-Update-Full: The Elite Update Management Protocol for Arch Linux.
+Smart synchronization across Pacman, AUR, Flatpaks, and Snaps, paired with real-time integrity auditing. Absolute automation that packs everything you need for updates and routine maintenance (orphan packages and cache purging), while keeping the ultimate control firmly in your hands.**
 
 ---
-**🚀 What's New: Arch Update Full v3.8 (Sentinel Update)**
- **Highlights of the latest release:**
+**🚀 What's New: Arch Update Full v3.9**
+Highlights of the new version of the automation protocol:
 
-**⚡ Smart Connectivity Gatekeeper:** A pre-verification network system that checks your connection before starting critical processes, preventing timeouts and database corruption.
+**⚡Smart Connection Audit: Network testing has been significantly upgraded. The protocol now runs a primary ping against your local mirrors. If there is no response, a secondary fallback attempt is made directly to archlinux.org before aborting the operation.**
 
-**📊 Real-time Latency Telemetry:** Accurate latency extraction using AWK, showing network status in milliseconds (ms) directly on the interface.
+**📊Real-time Latency Telemetry:** **High-precision latency extraction powered by AWK, displaying live network status in milliseconds (ms) directly on the interface.**
 
-**🎨 UI Redesign (Block Edition):** Next-Gen UI Architecture featuring double-character borders and dynamic alignment for an immersive, professional terminal experience.
+**🎨 New Official Icon: A completely revamped, custom aesthetic designed to match the tool's cyberpunk interface—now sleeker, more minimalist, and rendered in superior quality.**
 
-**🧹 Orphan Package Bug Fix:** Fixed the bug related to orphan package removal, ensuring a clean and automated purge.
+**⚙️ Hybrid AUR Updates: Absolute control is back in your hands. You can now choose your preferred operational mode on the fly when updating the AUR:**
 
-**🛡️ Conflict Mediation:** Strategic removal of the `--noconfirm` flag from Pacman to allow manual validation during critical package changes, keeping your system fully stable.
+**Automatic: Executes a rapid, hands-off update (--noconfirm).**
 
-**✅ ShellCheck Certified: 100% validated code**. Zero syntax or logic errors, ensuring maximum stability on Bash.
+**Manual: An interactive mode where you can audit PKGBUILDs and confirm changes step-by-step ([!] defaults to manual mode as a safety fallback in case of user typos).**
 
---- 
-**📦 Installation (AUR): **Arch Update Full is available on the AUR. This is the recommended installation method because it ensures the package** itself stays updated through the AUR repository.**
---- 
+**🛡️Conflict Mediation:** Strategic removal of the --noconfirm flag within the Pacman environment to allow human validation during critical package shifts, preserving the absolute integrity of Arch Linux.
+
+**🔔 Interactive Notifications (Sentinel Mode): The background daemon now fires up a smart visual alert featuring a "⚡ Click to Launch App" button. Clicking it instantly triggers the native .desktop launcher, spawning the terminal right in front of you.**
+
+**🌐 Temporary Bilingual Support: To embrace our global community, terminal outputs now feature side-by-side duplicated text (PT-BR and EN-US).**
+
+✅ **ShellCheck Certified: 100% validated codebase**. Zero syntax or logic errors, ensuring maximum stability under Bash.
+
+---
+**📦 Installation (AUR): Arch Update Full is available on the AUR. This is the recommended installation method to keep the software always up to date.**
+---
 
 **👉  Official AUR Repository: https://aur.archlinux.org/packages/arch-update-full**
-
-**⚠️ AUR Version Note:** In the AUR repository, the package is currently at version 3.8-7. The -7 suffix represents purely packaging revisions (pkgrel) made during deployment (such as checksum fixes and icon path adjustments). The core source code and features remain identical to the stable 3.8 release found in this repository.
 
 
 ### 🚀 **Quick Installation (AUR Helpers)**
@@ -46,51 +53,63 @@ paru -S arch-update-full
 
 ---
 # **Protocol Architecture (Core Functions)**
-**🛡️ Arch Update Full: Sentinel Protocol (v3.8)**
+**🛡️ Arch Update Full: Sentinel Protocol (v3.9)**
 
-arch-update-full evolved from a simple script into an autonomous maintenance ecosystem. It runs a strict sequence of 14 integrity and intelligence layers, making sure your Arch Linux setup stays at peak performance and security:
+arch-update-full has evolved from a simple script into an autonomous maintenance ecosystem. It now executes a rigorous sequence of 16 intelligence and integrity layers, ensuring your Arch Linux remains at the absolute cutting edge of performance and security:
 
-### 🚀 Integrity and Intelligence Layers (Sentinel Protocol)
+### 🚀 Integrity & Intelligence Layers 
 
-1. **Sentinel Mode (Silent Interception):** Background monitoring running via *Systemd User Timers*. The system checks for updates silently **every 3 hours** and sends native desktop alerts via `libnotify` only if new packages are available.
+1. **Sentinel Mode (Silent Interception)**: Background monitoring powered by Systemd User Timers. The system silently checks for updates **every 3 hours** and dispatches native alerts via libnotify only when new packages are available.
 
-2. **Dynamic Auto-Installation:** Built-in self-configuration logic. When executed, the script checks its own persistence in the system, making sure the Sentinel service stays active no matter which folder it was installed in.
+2. **Dynamic Auto-Installation:** The script features self-configuring logic. Upon execution, it validates its own persistence within the system, ensuring the Sentinel service remains permanently active, regardless of the installation directory.
 
-3. **Mirror Optimization (Reflector):** Dynamically optimizes your *mirrorlist* to target the 5 fastest and most synced HTTPS servers, maximizing your download speeds.
+3. **Mirror Optimization (Reflector):** Dynamically optimizes the *mirrorlist* targeting the 5 fastest, most up-to-date HTTPS servers to maximize your download bandwidth.
 
-4. **Integrity & Core Sync (Pacman):** Deep sync of official repositories and core system updates.
+4. **Integrity & Core Sync (Pacman):** Performs a deep synchronization of the official repositories and updates critical system core packages.
 
-5. **AUR Intelligence Hub:** Auto-detects your *AUR Helpers*. It has native support for **Yay** or **Paru**, letting you choose the update engine on the fly.
+5. **AUR Intelligence Hub:** Automated discovery of *AUR Helpers*. Features native, intelligent support for **Yay** or **Paru**, allowing you to choose your update engine on the fly.
 
-6. **Universal Sandbox Update:** Full sync for sandboxed apps via **Flatpak** and universal packages via **Snapd**, ensuring no part of your system gets left behind.
+6. **Universal Sandbox Update:** Full synchronization of isolated sandbox applications via **Flatpak** and universal packages via **Snapd**, ensuring no sector of the system falls behind.
 
-7. **Disk Integrity Reserve:** Pre-update disk space check. If your SSD has less than 5GB free, the script runs an emergency cleanup or aborts the process to prevent data corruption.
+7. **Disk Integrity Reserve:** Pre-update disk space auditing. If your SSD drops below 5GB of free space, the script executes an emergency purge or aborts the process entirely to prevent data corruption.
 
-8. **Core Auditing (Kernel & Driver Check):** Real-time scans of Pacman logs to spot critical changes in **Nvidia** drivers, the **Linux Kernel**, **Mesa**, or **Systemd**.
+8. **Core Audit (Kernel & Driver Check):** Real-time scanning of Pacman logs to flag critical changes to **Nvidia** drivers, the **Linux Kernel**, **Mesa**, or **Systemd**.
 
-9. **Orphan Purge & Cache Cleanup:** Finds and removes leftover dependencies (orphans) and manages your system cache using `paccache`, `paccache -r`, and the `pacman -Sc` command, extending your SSD's lifespan.
+9. **Orphan & Cache Purge:** Locates and sweeps away residual dependencies (orphans) while stabilizing the package cache—retaining the last 3 versions via `paccache`, `paccache -r`, and `pacman -Sc`—to preserve your SSD’s lifespan.
 
-10. **Sentinel Logs (FIFO Rotation):** A rolling log system. The script keeps only the last 13 update sessions, giving you enough history for debugging without cluttering your storage.
+10. **Sentinel Logs (FIFO Rotation):** A telemetry setup utilizing rotating logs. The script retains only the last 13 update sessions, ensuring a reliable debugging history without hoarding storage space.
 
-11. **Universal Notification Protocol:** When the maintenance cycle finishes or finds an update (in ghost/sentinel mode), the script fires a desktop alert via `libnotify`. This ensures that on **any desktop environment (DE) or window manager**, even if you are on another workspace or focused on your studies, you get immediate confirmation that **Sentinel** completed its task, updates were detected, and logs were generated.
+11. **Universal Notification Protocol:** Upon completing the maintenance loop or detecting an update (Sentinel Ghost Mode), the script dispatches a desktop alert via `libnotify`. This guarantees that across **any interface or Desktop Environment (DE)**—even if you are on another workspace or locked in on your studies—you get instant confirmation that the **Sentinel** has finished its run, detected updates, and successfully written the logs.
 
-12. **Telemetry System (Logs)**
+12. **Interactive Notifications (Sentinel Mode): The background daemon now fires up a smart visual alert featuring a "⚡ Click to Launch App" button. Clicking it instantly triggers the native .desktop launcher, spawning the terminal right in front of you.** 
+    
+13. **Telemetry System (Logs)**
 The protocol manages two independent log streams:
-* `~/.logs_arch_update_full/` -> Full history of manual sessions (retains 13 versions).
-* `~/.logs_sentinel_check/` -> Technical logs of background Sentinel rounds (retains 3 versions).
+**~/.logs_arch_update_full/:** Complete history of manual sessions (13-version retention).
+**~/.logs_sentinel_check/:** Technical logs tracking the Sentinel’s routine rounds (3-version retention).
 
-13. **ShellCheck Validation (Quality Certification):** The code was run through ShellCheck and passed with zero errors. This guarantees flawless Bash syntax, properly quoted variables, and eliminates the risk of silent failures from bad commands. Fully armored code.
+14. **ShellCheck Validation (Quality Certification)** The Standard: The entire codebase went through the ShellCheck gauntlet and emerged with zero errors. Result: This ensures the Bash syntax is pristine, variables are safely quoted, and there is absolutely zero risk of silent failures due to malformed commands. It's a completely bulletproof codebase.
 
-14. **Smart Connectivity Gatekeeper:** A pre-verification network system that checks your connection before starting critical processes, preventing timeouts and database corruption.
+15. **Smart Connectivity Gatekeeper:** Network testing has been significantly upgraded. The protocol now runs a primary ping against your local mirrors. If there is no response, a secondary fallback attempt is made directly to archlinux.org before aborting the operation.
 
---- 
-**Smart Notifications**
+16. **Hybrid AUR Updates: Absolute control is back in your hands. You can now choose your preferred operational mode on the fly when updating the AUR:**
+**Automatic: Executes a rapid, hands-off update (--noconfirm).**
+**Manual: An interactive mode where you can audit PKGBUILDs and confirm changes step-by-step ([!] defaults to manual mode as a safety fallback in case of user typos).**
+
 ---
+**Smart Notifications**
+
+[Note: The counter is zeroed out because the screenshot was captured during testing.]
+
+---
+<img width="543" height="167" alt="botao para chamar app" src="https://github.com/user-attachments/assets/ee516886-1fe5-44b2-8bcc-d03f21e7563c" />
+<img width="543" height="167" alt="notificação final" src="https://github.com/user-attachments/assets/1b713c33-53a5-4a48-8021-08fff8226f4c" />
+
+
 
 **Real-time desktop alerts for new update availability and instant confirmation as soon as the maintenance cycle finishes.**
 
-<img width="1752" height="681" alt="sentinela avisando updates" src="https://github.com/user-attachments/assets/9f993c59-dd7a-4fc3-b12b-1b4d640b18f8" />
-<img width="1774" height="643" alt="captura protocolo concluido" src="https://github.com/user-attachments/assets/31cbd1a7-9430-4a3a-8654-c721fec45e39" />
+
 
 
 ---
@@ -101,16 +120,17 @@ The protocol manages two independent log streams:
 
 ### **⚡ Sentinel Protocol in Action :**
 ---
-<img width="1433" height="1033" alt="cap1" src="https://github.com/user-attachments/assets/5a95455a-2708-4bfb-8f2b-a31dd3185c52" />
-<img width="1433" height="1033" alt="cap2" src="https://github.com/user-attachments/assets/7de9989b-4221-4f56-b3b3-6ee3bab39db4" />
-<img width="1433" height="1033" alt="cap3" src="https://github.com/user-attachments/assets/c2b1cf9a-c935-44c7-b1ed-47ae43a4a332" />
-<img width="1433" height="1033" alt="cap4" src="https://github.com/user-attachments/assets/70bf79bb-1fb5-4fd7-968a-d80597f130ca" />
-<img width="1433" height="1033" alt="cap5" src="https://github.com/user-attachments/assets/19a2f731-8222-4460-92bc-8a1be5482e4c" />
+<img width="1075" height="700" alt="1" src="https://github.com/user-attachments/assets/1371cfa2-7545-4dee-b1dd-b1e4c64590f9" />
+<img width="1075" height="700" alt="2" src="https://github.com/user-attachments/assets/7b706681-995b-4a82-b90a-8e6e4f7f7a89" />
+<img width="1075" height="700" alt="3" src="https://github.com/user-attachments/assets/f8c36ed7-cbd3-4f73-8333-81e0d34ed365" />
+<img width="1075" height="700" alt="4" src="https://github.com/user-attachments/assets/9bc4317f-ab7c-41d9-ba5c-7ecd6b225533" />
+<img width="1075" height="700" alt="5" src="https://github.com/user-attachments/assets/7487c632-363a-45b7-9aa6-cf5b5abac4f2" />
 
 
-### **🚀 System Menu (v3.8 Feature!)**
+### **🚀 System Menu (v3.9 Feature!)**
 ---
-<img width="256" height="256" alt="sentinela-v38" src="https://github.com/user-attachments/assets/fc7c7948-820a-434d-9c03-0e373a2b1e69" />
+<img width="512" height="512" alt="novalogoarchupdatefullv39" src="https://github.com/user-attachments/assets/ff0b5bf6-a321-43ba-8605-59120d781b0e" />
+
 
 ### **📁 Log File Location: /home/$USER/.** (~/.logs_arch_update_full/  &  ~/.logs_sentinel_check/)
 ---
@@ -142,11 +162,12 @@ sudo chmod 755 /usr/bin/arch-update-full
 ```
 **2. Move the icon to the system pixmaps directory:**
 ```bash
-sudo cp sentinela-v38.png /usr/share/pixmaps/
+
+sudo cp novalogoarchupdatefullv39.png /usr/share/pixmaps/
 ```
 **3. Install the shortcut into the applications menu (XDG):**
 ```bash
-sudo cp arch-update-full.desktop /usr/share/applications/
+sudo cp arch-update-full.desktop /usr/share/applications/arch-update-full.desktop
 ```
 ---
 
