@@ -97,7 +97,7 @@ O protocolo mantém dois fluxos de logs independentes:
 ---
 **Notificações Inteligentes**
 
-Obs: o contador está zerado pois foi gerado o print em testes.
+[Obs: o contador está zerado pois foi gerado o print em testes.]
 
 ---
 <img width="543" height="167" alt="botao para chamar app" src="https://github.com/user-attachments/assets/d8f27473-2c19-4aa3-b131-ecd52e900dcf" />
