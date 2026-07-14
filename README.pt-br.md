@@ -1,6 +1,6 @@
  <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">  [Português (BR)](README.pt-br.md)
 ---
-***🛡️ Arch Update Full (Protocolo Sentinela)🔄*** **Versão 3.9**
+***🛡️ Arch Update Full (Protocolo Sentinela)🔄*** **Versão 3.9-5**
 ---
 
 **Organizador avançado, leve e totalmente automatizado desenvolvido para o Arch Linux. Centraliza atualizações, otimizações de desempenho e auditorias de integridade do sistema..**
@@ -8,7 +8,7 @@
 **Arch-Update-Full: O Protocolo de Elite para Gestão de Atualizações do Arch Linux. Sincronização inteligente de Pacman, AUR e Flatpaks e Snaps,  com auditoria de integridade em tempo real. Automação absoluta, incluído tudo que é preciso para atualização e manutenções de rotina( pacote órfãos e cache) mas ainda mantendo o controle nas suas mãos.**
 
 ---
-**🚀 Novidades: Arch Update Full v3.9**
+**🚀 Novidades: Arch Update Full v3.9-5**
 Destaques da nova versão do protocolo de automação:
 
 **⚡Auditoria de Conexão Inteligente: O teste de rede foi aprimorado. O protocolo agora faz um ping primário nos seus mirrors locais. Se não houver resposta, uma segunda tentativa direta no archlinux.org é feita antes de abortar a operação.**
@@ -51,7 +51,7 @@ paru -S arch-update-full
 
 ---
 # **Arquitetura do Protocolo (Core Functions):**
-**🛡️ Arch Update Full: Sentinel Protocol (v3.9)**
+**🛡️ Arch Update Full: Sentinel Protocol (v3.9-5)**
 
 O arch-update-full evoluiu de um simples script para um ecossistema de manutenção autônomo. Agora, ele executa uma sequência rigorosa de 16 camadas de integridade e inteligência, garantindo que o seu Arch Linux esteja sempre na vanguarda da performance e segurança:
 
@@ -97,10 +97,8 @@ O protocolo mantém dois fluxos de logs independentes:
 ---
 **Notificações Inteligentes**
 
-[Obs: o contador está zerado pois foi gerado o print em testes.]
-
 ---
-<img width="543" height="167" alt="botao para chamar app" src="https://github.com/user-attachments/assets/d8f27473-2c19-4aa3-b131-ecd52e900dcf" />
+<img width="535" height="184" alt="botaoclick" src="https://github.com/user-attachments/assets/61031249-977f-4e72-94ca-5dd3139201a2" />
 <img width="543" height="167" alt="notificação final" src="https://github.com/user-attachments/assets/472f8e81-ecaf-4f12-b440-569f5af8035d" />
 
 
