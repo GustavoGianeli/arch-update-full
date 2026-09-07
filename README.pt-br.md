@@ -92,7 +92,7 @@ O arch-update-full evoluiu de um simples script para um ecossistema de manutenç
 
 11. **Protocolo de Notificação Universal:** Ao concluir a sequência de manutenção ou achar uma atualização (modo sentinela ghost), o script dispara um alerta para a interface desktop via `libnotify`. Isso garante que, em **qualquer interface, desktop environment (DE)** mesmo em outra área de trabalho ou focado em outros estudos, você receba a confirmação imediata de que o **Sentinel** finalizou a tarefa ou se alguma atualição foi detectada e que os logs foram gerados.
 
-12.**Notificação Interativa (Modo Sentinela AGORA com ícones personalizados para notificar): O daemon em background agora dispara um alerta visual inteligente com um botão "⚡ Click to Launch App". Ao clicar, ele aciona o lançador .desktop nativo e abre o terminal automaticamente na sua frente.** 
+12.**Notificação Interativa (Modo Sentinela AGORA com ícones personalizados para notificar): O daemon em background agora dispara um alerta visual inteligente com um botão "Click to Launch App". Ao clicar, ele aciona o lançador .desktop nativo e abre o terminal automaticamente na sua frente.** 
     
 13. **Sistema de Telemetria (Logs)**
 O protocolo mantém dois fluxos de logs independentes:
@@ -119,7 +119,7 @@ O protocolo mantém dois fluxos de logs independentes:
 
 **Alertas desktop em tempo real sobre a disponibilidade de novas atualizações e a confirmação imediata ao concluir o protocolo de manutenção.**
 
-**Logica de uso dos ícones**
+**Logica de uso dos ícones:**
 
 <img width="1254" height="1254" alt="logica farol atualizado" src="https://github.com/user-attachments/assets/407f6146-b462-4300-bb2a-dfe3a87c8db7" />
 
