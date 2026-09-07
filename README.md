@@ -1,6 +1,6 @@
  <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">   [Português (BR)](README.pt-br.md)
 ---
-***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Version 3.9-6**
+***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Version 4.0**
 ---
 
 **An advanced, lightweight, and fully automated maintenance tool built for Arch Linux. It centralizes your updates, performance tweaks, and system integrity checks.**
@@ -9,38 +9,46 @@
 Smart synchronization across Pacman, AUR, Flatpaks, and Snaps, paired with real-time integrity auditing. Absolute automation that packs everything you need for updates and routine maintenance (orphan packages and cache purging), while keeping the ultimate control firmly in your hands.**
 
 ---
-**🚀 What's New: Arch Update Full v3.9-6**
-Highlights of the new version of the automation protocol:
+**🚀 What's New: Arch Update Full v: 4.0**
+Highlights of the new automation protocol version:
 
-**⚡Smart Connection Audit: Network testing has been significantly upgraded. The protocol now runs a primary ping against your local mirrors. If there is no response, a secondary fallback attempt is made directly to archlinux.org before aborting the operation.**
+**Sentinel Module (Smart Notifications):**
+Introduction of the dynamic visual alert system with exclusive beacon icons across three levels:
 
-**📊Real-time Latency Telemetry:** **High-precision latency extraction powered by AWK, displaying live network status in milliseconds (ms) directly on the interface.**
+**🔷 Blue Beacon: Routine updates (low volume).**
 
-**🎨 New Official Icon: A completely revamped, custom aesthetic designed to match the tool's cyberpunk interface—now sleeker, more minimalist, and rendered in superior quality.**
+**🔶 Yellow Beacon: Moderate volume of pending packages.**
 
-**⚙️ Hybrid AUR Updates: Absolute control is back in your hands. You can now choose your preferred operational mode on the fly when updating the AUR:**
+**🔴 Red Beacon / Kernel Tux: Critical alert (Kernel, NVIDIA/Mesa drivers, Systemd) requiring attention and suggesting a system reboot.**
 
-**Automatic: Executes a rapid, hands-off update (--noconfirm).**
+**⚡ Official Pikaur Support:**
+Alongside yay and paru, the script now features complete native integration for the pikaur helper, expanding compatibility for AUR users.
 
-**Manual: An interactive mode where you can audit PKGBUILDs and confirm changes step-by-step ([!] defaults to manual mode as a safety fallback in case of user typos).**
+**🧱 Modular Architecture (Refactored Code):**
+The code is no longer an extensive monolithic script and has been completely rebuilt into independent, readable functions orchestrated by a clean and performant main() function.
 
-**🛡️Conflict Mediation:** Strategic removal of the --noconfirm flag within the Pacman environment to allow human validation during critical package shifts, preserving the absolute integrity of Arch Linux.
+**📰 Integrated Arch Linux News:**
+Now you can read the latest official Arch Linux news directly through the terminal inside arch-update-full, ensuring you know about manual interventions before updating.
 
-**🔔 Interactive Notifications (Sentinel Mode): The background daemon now fires up a smart visual alert featuring a "⚡ Click to Launch App" button. Clicking it instantly triggers the native .desktop launcher, spawning the terminal right in front of you.**
+**🌐 Interactive Mirrorlist Reflector:**
+Mirrorlist optimization via reflector has been improved: now the system explicitly asks if you want to optimize mirrors in the session, giving total network control to the user.
 
-**🌐 Temporary Bilingual Support: To embrace our global community, terminal outputs now feature side-by-side duplicated text (PT-BR and EN-US).**
+**🎨 Polished Terminal UI/UX & Preparation for Automatic Language Detection:**
+Clean, modern, and minimalist CLI interface, using a Neon tone palette for maximum legibility.
+**The codebase has been structured to support automatic system language detection in future updates, displaying the terminal directly in PT-BR or EN-US.**
 
-✅ **ShellCheck Certified: 100% validated codebase**. Zero syntax or logic errors, ensuring maximum stability under Bash.
+**🌐 Temporary Bilingual Support: To embrace our global community, terminal outputs now feature dual side-by-side text (PT-BR and EN-US).**
+
+✅ **ShellCheck Certified: 100% validated code**. Zero syntax and logic errors, ensuring maximum stability in Bash.
 
 ---
-**📦 Installation (AUR): Arch Update Full is available on the AUR. This is the recommended installation method to keep the software always up to date.**
+**📦 Installation (AUR): Arch Update Full is available on the AUR. This is the recommended installation method to keep the software always updated.**
 ---
 
-**👉  Official AUR Repository: https://aur.archlinux.org/packages/arch-update-full**
-
+**👉 Package link on AUR: https://aur.archlinux.org/packages/arch-update-full**
 
 ### 🚀 **Quick Installation (AUR Helpers)**
-**Deploy the package automatically using your preferred AUR manager:**
+**Choose your preferred AUR helper to automatically sync and install the package:**
 
  **➡ Install utilizing Yay:** 
 ```bash
@@ -50,10 +58,14 @@ yay -S arch-update-full
 ```bash
 paru -S arch-update-full
 ```
+ **➡ Install utilizing Pikaur:**
+```bash
+pikaur -S arch-update-full
+```
 
 ---
 # **Protocol Architecture (Core Functions)**
-**🛡️ Arch Update Full: Sentinel Protocol (v3.9-5)**
+**🛡️ Arch Update Full: Sentinel Protocol (V:4.0)**
 
 arch-update-full has evolved from a simple script into an autonomous maintenance ecosystem. It now executes a rigorous sequence of 16 intelligence and integrity layers, ensuring your Arch Linux remains at the absolute cutting edge of performance and security:
 
@@ -81,7 +93,7 @@ arch-update-full has evolved from a simple script into an autonomous maintenance
 
 11. **Universal Notification Protocol:** Upon completing the maintenance loop or detecting an update (Sentinel Ghost Mode), the script dispatches a desktop alert via `libnotify`. This guarantees that across **any interface or Desktop Environment (DE)**—even if you are on another workspace or locked in on your studies—you get instant confirmation that the **Sentinel** has finished its run, detected updates, and successfully written the logs.
 
-12. **Interactive Notifications (Sentinel Mode): The background daemon now fires up a smart visual alert featuring a "⚡ Click to Launch App" button. Clicking it instantly triggers the native .desktop launcher, spawning the terminal right in front of you.** 
+12. **Interactive Notifications ((Sentinel Mode NOW with custom notification icons)): The background daemon now fires up a smart visual alert featuring a "Click to Launch App" button. Clicking it instantly triggers the native .desktop launcher, spawning the terminal right in front of you.** 
     
 13. **Telemetry System (Logs)**
 The protocol manages two independent log streams:
@@ -97,19 +109,19 @@ The protocol manages two independent log streams:
 **Manual: An interactive mode where you can audit PKGBUILDs and confirm changes step-by-step ([!] defaults to manual mode as a safety fallback in case of user typos).**
 
 ---
+
 **Smart Notifications**
 
-
 ---
-<img width="535" height="184" alt="botaoclick" src="https://github.com/user-attachments/assets/22572f40-a361-4d04-9d7a-2b65288d189b" />
+
+<img width="620" height="241" alt="notificação sentila azul" src="https://github.com/user-attachments/assets/e1379b74-e5da-4fd9-895c-29f9940d6c18" />
+<img width="678" height="261" alt="notificação vermelha" src="https://github.com/user-attachments/assets/fb869b96-7911-4d40-88e5-7be5d289bc74" />
 <img width="543" height="167" alt="notificação final" src="https://github.com/user-attachments/assets/1b713c33-53a5-4a48-8021-08fff8226f4c" />
 
+**Real-time desktop alerts regarding the availability of new updates and immediate confirmation upon completing the maintenance protocol.**
 
-
-**Real-time desktop alerts for new update availability and instant confirmation as soon as the maintenance cycle finishes.**
-
-
-
+**Icon usage logic:**
+<img width="1254" height="1254" alt="logica farol atualizado" src="https://github.com/user-attachments/assets/f8eddfb3-94dd-49ef-ad30-e8d96516de29" />
 
 ---
 ## **UI & Visuals**
@@ -119,14 +131,21 @@ The protocol manages two independent log streams:
 
 ### **⚡ Sentinel Protocol in Action :**
 ---
-<img width="1075" height="700" alt="1" src="https://github.com/user-attachments/assets/1371cfa2-7545-4dee-b1dd-b1e4c64590f9" />
-<img width="1075" height="700" alt="2" src="https://github.com/user-attachments/assets/7b706681-995b-4a82-b90a-8e6e4f7f7a89" />
-<img width="1075" height="700" alt="3" src="https://github.com/user-attachments/assets/f8c36ed7-cbd3-4f73-8333-81e0d34ed365" />
-<img width="1075" height="700" alt="4" src="https://github.com/user-attachments/assets/9bc4317f-ab7c-41d9-ba5c-7ecd6b225533" />
-<img width="1075" height="700" alt="5" src="https://github.com/user-attachments/assets/7487c632-363a-45b7-9aa6-cf5b5abac4f2" />
+
+<img width="1165" height="863" alt="1" src="https://github.com/user-attachments/assets/fc1ed2d1-bb2d-4e4d-abfb-9182dff574d9" />
+<img width="1165" height="863" alt="2" src="https://github.com/user-attachments/assets/366421a2-25f0-4a0a-8acd-1ef8bca4979a" />
+<img width="1165" height="863" alt="3" src="https://github.com/user-attachments/assets/647398c4-3371-46a6-863e-cba198a2e966" />
+<img width="1165" height="863" alt="4" src="https://github.com/user-attachments/assets/a23f5a2f-f38d-4065-91e2-aa794b318868" />
+<img width="1165" height="863" alt="5" src="https://github.com/user-attachments/assets/a82bb590-5b1c-4a9b-a927-11128bba6be7" />
+<img width="1165" height="863" alt="6" src="https://github.com/user-attachments/assets/000a1568-a08d-47a8-8f27-491aa1a74d3b" />
+<img width="1165" height="863" alt="7" src="https://github.com/user-attachments/assets/62917bd5-9de7-4f9c-93d4-0995d7d48990" />
+<img width="1165" height="863" alt="8" src="https://github.com/user-attachments/assets/c6c8cce2-2551-45ac-999a-cb2f882388fa" />
+<img width="1165" height="863" alt="9" src="https://github.com/user-attachments/assets/74a4b5dd-f2d1-4806-9692-773a6a8884e3" />
+
+https://github.com/user-attachments/assets/56ae70dc-ea84-4852-b0b8-feb36229ce8f
 
 
-### **🚀 System Menu (v3.9 Feature!)**
+### **🚀 System Menu**
 ---
 <img width="512" height="512" alt="novalogoarchupdatefullv39" src="https://github.com/user-attachments/assets/ff0b5bf6-a321-43ba-8605-59120d781b0e" />
 
@@ -161,12 +180,18 @@ sudo chmod 755 /usr/bin/arch-update-full
 ```
 **2. Move the icon to the system pixmaps directory:**
 ```bash
-
 sudo cp novalogoarchupdatefullv39.png /usr/share/pixmaps/
 ```
 **3. Install the shortcut into the applications menu (XDG):**
 ```bash
 sudo cp arch-update-full.desktop /usr/share/applications/arch-update-full.desktop
+```
+**4. Install Sentinel Module icons (Notification Beacons):**
+```bash
+sudo mkdir -p /usr/share/arch-update-full/icons
+sudo cp farol_azul_simbolo.png /usr/share/arch-update-full/icons/
+sudo cp farol_amarelo_simbolo.png /usr/share/arch-update-full/icons/
+sudo cp farol_vermelho_simbolo.png /usr/share/arch-update-full/icons/
 ```
 ---
 
