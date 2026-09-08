@@ -9,7 +9,8 @@
 Smart synchronization across Pacman, AUR, Flatpaks, and Snaps, paired with real-time integrity auditing. Absolute automation that packs everything you need for updates and routine maintenance (orphan packages and cache purging), while keeping the ultimate control firmly in your hands.**
 
 ---
-**🚀 What's New: Arch Update Full v: 4.0-2**
+**🚀 What's New: Arch Update Full v: 4.0-3**
+bug fixes!
 Highlights of the new automation protocol version:
 bugs fixe!
 **Sentinel Module (Smart Notifications):**
