@@ -1,6 +1,6 @@
  <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">   [Português (BR)](README.pt-br.md)
 ---
-***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Version 4.0**
+***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Version 4.0-2**
 ---
 
 **An advanced, lightweight, and fully automated maintenance tool built for Arch Linux. It centralizes your updates, performance tweaks, and system integrity checks.**
@@ -9,9 +9,9 @@
 Smart synchronization across Pacman, AUR, Flatpaks, and Snaps, paired with real-time integrity auditing. Absolute automation that packs everything you need for updates and routine maintenance (orphan packages and cache purging), while keeping the ultimate control firmly in your hands.**
 
 ---
-**🚀 What's New: Arch Update Full v: 4.0**
+**🚀 What's New: Arch Update Full v: 4.0-2**
 Highlights of the new automation protocol version:
-
+bugs fixe!
 **Sentinel Module (Smart Notifications):**
 Introduction of the dynamic visual alert system with exclusive beacon icons across three levels:
 
