@@ -14,12 +14,13 @@ Destaques da nova versão do protocolo de automação:
 bugs fixes
 **Módulo Sentinela (Notificações Inteligentes):**
 Introdução do sistema visual de alertas dinâmicos com ícones exclusivos de faróis em três níveis:
-
+( botão de notificação espera por 20 minutos antes de encerrar como ignorado pelo operado!)
 **🔷 Farol Azul: Atualizações de rotina (baixo volume).**
 
 **🔶 Farol Amarelo: Volume moderado de pacotes pendentes.**
 
 **🔴 Farol Vermelho / Kernel Tux: Alerta crítico (Kernel, drivers NVIDIA/Mesa, Systemd) exigindo atenção e sugerindo reboot do sistema.**
+( botão de notificação espera por 20 minutos antes de encerrar como ignorado pelo operado!)
 
 **⚡ Suporte Oficial ao Pikaur:**
 Além do yay e paru, agora o script conta com integração completa e nativa para o helper pikaur, expandindo a compatibilidade para os usuários do AUR.
