@@ -1,6 +1,6 @@
  <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">  [Português (BR)](README.pt-br.md)
 ---
-***🛡️ Arch Update Full (Protocolo Sentinela)🔄*** **Versão 4.0**
+***🛡️ Arch Update Full (Protocolo Sentinela)🔄*** **Versão 4.0-2**
 ---
 
 **Organizador avançado, leve e totalmente automatizado desenvolvido para o Arch Linux. Centraliza atualizações, otimizações de desempenho e auditorias de integridade do sistema..**
@@ -8,9 +8,9 @@
 **Arch-Update-Full: O Protocolo de Elite para Gestão de Atualizações do Arch Linux. Sincronização inteligente de Pacman, AUR e Flatpaks e Snaps,  com auditoria de integridade em tempo real. Automação absoluta, incluído tudo que é preciso para atualização e manutenções de rotina( pacote órfãos e cache) mas ainda mantendo o controle nas suas mãos.**
 
 ---
-**🚀 Novidades: Arch Update Full v: 4.0**
+**🚀 Novidades: Arch Update Full v: 4.0-2**
 Destaques da nova versão do protocolo de automação:
-
+bugs fixes
 **Módulo Sentinela (Notificações Inteligentes):**
 Introdução do sistema visual de alertas dinâmicos com ícones exclusivos de faróis em três níveis:
 
