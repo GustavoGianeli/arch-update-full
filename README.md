@@ -15,6 +15,7 @@ Highlights of the new automation protocol version:
 bugs fixe!
 **Sentinel Module (Smart Notifications):**
 Introduction of the dynamic visual alert system with exclusive beacon icons across three levels:
+**(The notification button waits 20 minutes before closing as "ignored by the operator"!)**
 
 **🔷 Blue Beacon: Routine updates (low volume).**
 
