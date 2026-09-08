@@ -1,6 +1,6 @@
  <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">  [Português (BR)](README.pt-br.md)
 ---
-***🛡️ Arch Update Full (Protocolo Sentinela)🔄*** **Versão 4.0-2**
+***🛡️ Arch Update Full (Protocolo Sentinela)🔄*** **Versão 4.0-3**
 ---
 
 **Organizador avançado, leve e totalmente automatizado desenvolvido para o Arch Linux. Centraliza atualizações, otimizações de desempenho e auditorias de integridade do sistema..**
