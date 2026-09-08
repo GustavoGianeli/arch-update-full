@@ -8,7 +8,8 @@
 **Arch-Update-Full: O Protocolo de Elite para Gestão de Atualizações do Arch Linux. Sincronização inteligente de Pacman, AUR e Flatpaks e Snaps,  com auditoria de integridade em tempo real. Automação absoluta, incluído tudo que é preciso para atualização e manutenções de rotina( pacote órfãos e cache) mas ainda mantendo o controle nas suas mãos.**
 
 ---
-**🚀 Novidades: Arch Update Full v: 4.0-2**
+**🚀 Novidades: Arch Update Full v: 4.0-3**
+bugs fixes!
 Destaques da nova versão do protocolo de automação:
 bugs fixes
 **Módulo Sentinela (Notificações Inteligentes):**
