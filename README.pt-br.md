@@ -9,16 +9,19 @@
 
 ---
 **🚀 Arch Update Full — Release v4.1-1**
+
 bugs fixes!
+
 Destaques da nova versão do protocolo de automação:
-bugs fixes
 
 **💡 Observação para Atualizações**
 **Após atualizar o pacote pelo AUR/pacman, execute o programa principal uma vez no terminal para que a migração automática do serviço Sentinela seja concluída ou abra o App desktop**
 
-**Módulo Sentinela (Notificações Inteligentes):**
+**​⚜️Módulo Sentinela (Notificações Inteligentes):**
+
 Introdução do sistema visual de alertas dinâmicos com ícones exclusivos de faróis em três níveis:
 ( botão de notificação espera por 37 minutos antes de encerrar como ignorado pelo operado!)
+
 **🔷 Farol Azul: Atualizações de rotina (baixo volume).**
 
 **🔶 Farol Amarelo: Volume moderado de pacotes pendentes.**
@@ -29,16 +32,18 @@ Introdução do sistema visual de alertas dinâmicos com ícones exclusivos de f
 **🐧 Novo Ícone Especial & Ajustes na Lógica do Farol** Novo Ícone Tux com Ferramentas: Adicionada uma notificação especial e exclusiva com o ícone do Tux segurando chave e engrenagem para sinalizar atualizações de Kernel e Drivers de Vídeo (GPU).
 
 **⚡ Suporte Oficial ao Pikaur:**
+
 Além do yay e paru, agora o script conta com integração completa e nativa para o helper pikaur, expandindo a compatibilidade para os usuários do AUR.
 
 **🧱 Arquitetura Modular & Sentinela Isolado:**
-Desacoplamento de Módulos: O modo Sentinela foi separado do script principal e agora possui seu próprio binário dedicado (arch-update-full-sentinela), reduzindo drasticamente o tamanho do script interativo.
 
-Eliminação de Race Condition (Modo Corrida): Fim dos conflitos de execução entre a interface do usuário e as verificações automáticas em segundo plano.
+* Desacoplamento de Módulos: O modo Sentinela foi separado do script principal e agora possui seu próprio binário dedicado (arch-update-full-sentinela), reduzindo drasticamente o tamanho do script interativo.
 
-Operação Fantasma Otimizada: O Sentinela executa a cada 3 horas via systemd --user de forma 100% invisível e sem necessidade de sudo, emitindo notificações apenas quando houver atualizações pendentes.
+* Eliminação de Race Condition (Modo Corrida): Fim dos conflitos de execução entre a interface do usuário e as verificações automáticas em segundo plano.
 
-Mecanismo de Auto-Reparo (Self-Healing): O script principal agora identifica configurações antigas do systemd e atualiza automaticamente os arquivos de serviço e timer para o novo caminho na primeira execução pós-atualização.
+* Operação Fantasma Otimizada: O Sentinela executa a cada 3 horas via systemd --user de forma 100% invisível e sem necessidade de sudo, emitindo notificações apenas quando houver atualizações pendentes.
+
+* Mecanismo de Auto-Reparo (Self-Healing): O script principal agora identifica configurações antigas do systemd e atualiza automaticamente os arquivos de serviço e timer para o novo caminho na primeira execução pós-atualização.
 
 **📰 Arch Linux News Integrado:**
 Agora você pode ler a última notícias oficiais do Arch Linux diretamente pelo terminal dentro do arch-update-full, garantindo que você saiba de intervenções manuais antes de atualizar.
@@ -78,7 +83,8 @@ pikaur -S arch-update-full
 
 ---
 # **Arquitetura do Protocolo (Core Functions):**
-**🛡️ Arch Update Full: Sentinel Protocol (v4.0)**
+
+**🛡️ Arch Update Full: Sentinel Protocol (v4.1)**
 
 O arch-update-full evoluiu de um simples script para um ecossistema de manutenção autônomo. Agora, ele executa uma sequência rigorosa de 16 camadas de integridade e inteligência, garantindo que o seu Arch Linux esteja sempre na vanguarda da performance e segurança:
 
@@ -129,6 +135,7 @@ O protocolo mantém dois fluxos de logs independentes:
 
 <img width="543" height="167" alt="notificação final" src="https://github.com/user-attachments/assets/472f8e81-ecaf-4f12-b440-569f5af8035d" />
 
+---
 **Alertas desktop em tempo real sobre a disponibilidade de novas atualizações e a confirmação imediata ao concluir o protocolo de manutenção.**
 
 **Logica de uso dos ícones:**
@@ -158,7 +165,6 @@ https://github.com/user-attachments/assets/031f683f-5628-4a40-aef4-98ed4a6cef47
 ### **🚀 Menu do Sistema** 
 ---
 <img width="512" height="512" alt="novalogoarchupdatefullv39" src="https://github.com/user-attachments/assets/95b947d3-da51-4098-b1db-477ec0165bb0" />
-
 
 ---
 ### **📁 Localização dos arquivos de Logs: /home/$USER/. (arquivo oculto) (~/.logs_arch_update_full/ & ~/.logs_sentinel_check/)**
