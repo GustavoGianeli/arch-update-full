@@ -23,7 +23,7 @@ Introdução do sistema visual de alertas dinâmicos com ícones exclusivos de f
 
 **🔶 Farol Amarelo: Volume moderado de pacotes pendentes.**
 
-**🔴 Farol Vermelho Refatorado: O ícone do Farol Vermelho passa a ser acionado estritamente por acúmulo de pacotes (=+ 34  pacotes pendentes), garantindo uma hierarquia de alertas mais precisa e clara para o usuário.
+**🔴 Farol Vermelho Refatorado:** O ícone do Farol Vermelho passa a ser acionado estritamente por acúmulo de pacotes (=+ 34  pacotes pendentes), garantindo uma hierarquia de alertas mais precisa e clara para o usuário.
 ( botão de notificação espera por 37 minutos antes de encerrar como ignorado pelo operado!)
 
 **🐧 Novo Ícone Especial & Ajustes na Lógica do Farol** Novo Ícone Tux com Ferramentas: Adicionada uma notificação especial e exclusiva com o ícone do Tux segurando chave e engrenagem para sinalizar atualizações de Kernel e Drivers de Vídeo (GPU).
