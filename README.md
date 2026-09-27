@@ -133,6 +133,7 @@ The protocol manages two independent log streams:
 
 <img width="543" height="167" alt="notificação final" src="https://github.com/user-attachments/assets/1b713c33-53a5-4a48-8021-08fff8226f4c" />
 
+---
 **Real-time desktop alerts regarding the availability of new updates and immediate confirmation upon completing the maintenance protocol.**
 
 **Icon usage logic:**
