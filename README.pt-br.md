@@ -1,6 +1,6 @@
  <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">  [Português (BR)](README.pt-br.md)
 ---
-***🛡️ Arch Update Full (Protocolo Sentinela)🔄*** **Versão 4.0-3**
+***🛡️ Arch Update Full (Protocolo Sentinela)🔄*** **Versão 4.1-1**
 ---
 
 **Organizador avançado, leve e totalmente automatizado desenvolvido para o Arch Linux. Centraliza atualizações, otimizações de desempenho e auditorias de integridade do sistema..**
@@ -8,25 +8,37 @@
 **Arch-Update-Full: O Protocolo de Elite para Gestão de Atualizações do Arch Linux. Sincronização inteligente de Pacman, AUR e Flatpaks e Snaps,  com auditoria de integridade em tempo real. Automação absoluta, incluído tudo que é preciso para atualização e manutenções de rotina( pacote órfãos e cache) mas ainda mantendo o controle nas suas mãos.**
 
 ---
-**🚀 Novidades: Arch Update Full v: 4.0-3**
+**🚀 Arch Update Full — Release v4.1-1**
 bugs fixes!
 Destaques da nova versão do protocolo de automação:
 bugs fixes
+
+**💡 Observação para Atualizações**
+**Após atualizar o pacote pelo AUR/pacman, execute o programa principal uma vez no terminal para que a migração automática do serviço Sentinela seja concluída ou abra o App desktop**
+
 **Módulo Sentinela (Notificações Inteligentes):**
 Introdução do sistema visual de alertas dinâmicos com ícones exclusivos de faróis em três níveis:
-( botão de notificação espera por 20 minutos antes de encerrar como ignorado pelo operado!)
+( botão de notificação espera por 37 minutos antes de encerrar como ignorado pelo operado!)
 **🔷 Farol Azul: Atualizações de rotina (baixo volume).**
 
 **🔶 Farol Amarelo: Volume moderado de pacotes pendentes.**
 
-**🔴 Farol Vermelho / Kernel Tux: Alerta crítico (Kernel, drivers NVIDIA/Mesa, Systemd) exigindo atenção e sugerindo reboot do sistema.**
-( botão de notificação espera por 20 minutos antes de encerrar como ignorado pelo operado!)
+**🔴 Farol Vermelho Refatorado: O ícone do Farol Vermelho passa a ser acionado estritamente por acúmulo de pacotes (=+ 34  pacotes pendentes), garantindo uma hierarquia de alertas mais precisa e clara para o usuário.
+( botão de notificação espera por 37 minutos antes de encerrar como ignorado pelo operado!)
+
+**🐧 Novo Ícone Especial & Ajustes na Lógica do Farol** Novo Ícone Tux com Ferramentas: Adicionada uma notificação especial e exclusiva com o ícone do Tux segurando chave e engrenagem para sinalizar atualizações de Kernel e Drivers de Vídeo (GPU).
 
 **⚡ Suporte Oficial ao Pikaur:**
 Além do yay e paru, agora o script conta com integração completa e nativa para o helper pikaur, expandindo a compatibilidade para os usuários do AUR.
 
-**🧱 Arquitetura Modular (Código Refatorado):**
-O código deixou de ser um script monobloco extenso e foi totalmente reconstruído em funções independentes e legíveis, orquestradas por uma função main() limpa e performática.
+**🧱 Arquitetura Modular & Sentinela Isolado:**
+Desacoplamento de Módulos: O modo Sentinela foi separado do script principal e agora possui seu próprio binário dedicado (arch-update-full-sentinela), reduzindo drasticamente o tamanho do script interativo.
+
+Eliminação de Race Condition (Modo Corrida): Fim dos conflitos de execução entre a interface do usuário e as verificações automáticas em segundo plano.
+
+Operação Fantasma Otimizada: O Sentinela executa a cada 3 horas via systemd --user de forma 100% invisível e sem necessidade de sudo, emitindo notificações apenas quando houver atualizações pendentes.
+
+Mecanismo de Auto-Reparo (Self-Healing): O script principal agora identifica configurações antigas do systemd e atualiza automaticamente os arquivos de serviço e timer para o novo caminho na primeira execução pós-atualização.
 
 **📰 Arch Linux News Integrado:**
 Agora você pode ler a última notícias oficiais do Arch Linux diretamente pelo terminal dentro do arch-update-full, garantindo que você saiba de intervenções manuais antes de atualizar.
@@ -38,7 +50,7 @@ A otimização de mirrors via reflector foi aprimorada: agora o sistema pergunta
 Interface CLI limpa, moderna e minimalista, utilizando paleta em tons Neon para máxima legibilidade.
 **O código base foi estruturado para suportar detecção automática do idioma do sistema em atualizações futuras, exibindo o terminal diretamente em PT-BR ou EN-US.**
 
-**🌐 Suporte Bilíngue Temporário: Para abraçar nossa comunidade global, as saídas do terminal agora apresentam textos duplicados lado a lado (PT-BR e EN-US).**
+**🌐 Suporte Multi-Idioma em Andamento: Início da reestruturação do código para identificar automaticamente a linguagem padrão do sistema operacional. Linguagens Suportadas no Roadmap: Estruturação inicial para suporte a PT-BR (Português), EN-US (Inglês) e ES-ES (Espanhol)..**
 
 ✅ **Certificação ShellCheck: Código 100% validado**. Zero erros de sintaxe e lógica, garantindo estabilidade máxima no Bash.
 
@@ -80,13 +92,13 @@ O arch-update-full evoluiu de um simples script para um ecossistema de manutenç
 
 4. **Integrity & Core Sync (Pacman):** Sincronização profunda dos repositórios oficiais e atualização dos pacotes vitais do sistema.
 
-5. **AUR Intelligence Hub:** Detecção automática de *AUR Helpers*. Possui suporte nativo e inteligente para **Yay** ou **Paru**, permitindo a escolha do motor de atualização em tempo real.
+5. **AUR Intelligence Hub:** Detecção automática de *AUR Helpers*. Possui suporte nativo e inteligente para **Yay**,**PikAur** ou **Paru**, permitindo a escolha do motor de atualização em tempo real.
 
 6. **Universal Sandbox Update:** Sincronização completa de aplicações isoladas via **Flatpak** e pacotes universais via **Snapd**, garantindo que nenhum setor do sistema fique desatualizado.
 
 7. **Disk Integrity Reserve:** Auditoria de espaço em disco pré-atualização. Se o SSD estiver com menos de 5GB livres, o script executa uma limpeza de emergência ou aborta o processo para evitar a corrupção de dados.
 
-8. **Auditoria de Núcleo (Kernel & Driver Check):** Varredura em tempo real nos logs do Pacman para detectar alterações críticas em drivers **Nvidia**, **Kernel Linux**, **Mesa** ou **Systemd**.
+8. **Auditoria de Núcleo (Kernel & Driver Check):** Varredura em tempo real nos logs do Pacman para detectar alterações críticas em drivers **Nvidia**, **AMD** **Kernel Linux**, **Mesa** ou **Systemd**.
 
 9. **Purga de Órfãos & Cache:** Localização e remoção de dependências residuais (órfãos) e estabilização de cache mantendo os últimos 3 via `paccache` `paccache -r` `pacman -Sc`, preservando a vida útil do SSD.
 
@@ -113,9 +125,7 @@ O protocolo mantém dois fluxos de logs independentes:
 **Notificações Inteligentes**
 
 ---
-<img width="620" height="241" alt="notificação sentila azul" src="https://github.com/user-attachments/assets/6c33de62-1567-4165-a4b4-6c99276b0175" />
-
-<img width="678" height="261" alt="notificação vermelha" src="https://github.com/user-attachments/assets/661f8cb3-0631-441d-9dea-649ed53f284e" />
+<img width="533" height="178" alt="imagem aviso de kernel" src="https://github.com/user-attachments/assets/2b922164-af33-4afc-92bd-3b8a02656f6d" />
 
 <img width="543" height="167" alt="notificação final" src="https://github.com/user-attachments/assets/472f8e81-ecaf-4f12-b440-569f5af8035d" />
 
@@ -123,9 +133,7 @@ O protocolo mantém dois fluxos de logs independentes:
 
 **Logica de uso dos ícones:**
 
-<img width="1254" height="1254" alt="logica farol atualizado" src="https://github.com/user-attachments/assets/407f6146-b462-4300-bb2a-dfe3a87c8db7" />
-
-
+<img width="1200" height="896" alt="novo funcionamento arch " src="https://github.com/user-attachments/assets/b5507f91-90db-4e78-a0d6-573961bdae8f" />
 
 ---
 ## **Interface e Visual :**
@@ -136,18 +144,16 @@ O protocolo mantém dois fluxos de logs independentes:
  **⚡ Protocolo Sentinela em Ação:** 
 ---
 
-<img width="1165" height="863" alt="1" src="https://github.com/user-attachments/assets/925ed2c6-e6fd-4c22-b515-c82c774ce377" />
-<img width="1165" height="863" alt="2" src="https://github.com/user-attachments/assets/b1553c7b-e0de-4350-b877-b0b026f190e0" />
-<img width="1165" height="863" alt="3" src="https://github.com/user-attachments/assets/d65a37d8-fab0-4553-8d37-748a17bfa610" />
-<img width="1165" height="863" alt="4" src="https://github.com/user-attachments/assets/d80391e3-ca48-4b37-a767-b26e3f2069df" />
-<img width="1165" height="863" alt="5" src="https://github.com/user-attachments/assets/59631110-0e65-42bc-898c-083ebb9576e2" />
-<img width="1165" height="863" alt="6" src="https://github.com/user-attachments/assets/6004057e-4d4e-4a83-a594-ed0c38e6a6d6" />
-<img width="1165" height="863" alt="7" src="https://github.com/user-attachments/assets/4fcca75b-0045-4c7f-9458-82f199e56d94" />
-<img width="1165" height="863" alt="8" src="https://github.com/user-attachments/assets/47cdd17e-7a53-47a6-8044-85e770431e74" />
-<img width="1165" height="863" alt="9" src="https://github.com/user-attachments/assets/5e88660b-74ac-4554-9b80-14bd40a90bed" />
+<img width="1043" height="747" alt="1 Imagem colada" src="https://github.com/user-attachments/assets/df6ae414-718d-47ee-b334-dc2d21dd03b6" />
+<img width="1043" height="747" alt="2" src="https://github.com/user-attachments/assets/e9038c8c-297e-4ad9-b90f-f00ed143e451" />
+<img width="1043" height="747" alt="3" src="https://github.com/user-attachments/assets/7a6f3728-d329-476c-b783-dbaf0a26f211" />
+<img width="1043" height="747" alt="4" src="https://github.com/user-attachments/assets/0fb28535-8f00-415e-992c-a2d472fe58f8" />
+<img width="1043" height="747" alt="5" src="https://github.com/user-attachments/assets/46f9d7e9-16dc-42b6-991b-f99b12da7ecb" />
+<img width="1069" height="763" alt="6" src="https://github.com/user-attachments/assets/5ca7eb8c-223e-494f-9f6a-df78250c7685" />
+<img width="1069" height="763" alt="7" src="https://github.com/user-attachments/assets/22149649-305c-42f9-a0e4-752ff971da4e" />
+<img width="1090" height="829" alt="8" src="https://github.com/user-attachments/assets/5a0c2736-dd08-45a0-b4ea-649df156846e" />
 
-https://github.com/user-attachments/assets/a4ff6b85-45d6-49a7-9239-4b07692c0f02
-
+https://github.com/user-attachments/assets/031f683f-5628-4a40-aef4-98ed4a6cef47
 
 ### **🚀 Menu do Sistema** 
 ---
@@ -169,7 +175,7 @@ https://github.com/user-attachments/assets/a4ff6b85-45d6-49a7-9239-4b07692c0f02
 **Como Instalar Manualmente:**
 ---
 
-**➡ Para usar o script como um comando nativo e ter o atalho no seu menu de aplicativos, execute os seguintes comandos:**
+**➡ Para usar o script como um comando nativo e ter o atalho no seu menu de aplicativos, execute os seguinte comando:**
 ```bash
 git clone https://aur.archlinux.org/arch-update-full.git
 cd arch-update-full
@@ -189,9 +195,6 @@ makepkg -si
 
 **Educação:** Estudante de Ciência da Computação (entusiasta de Linux e fuçador)
 
-**Hardware:** Acer Nitro V15 | i7 13th Gen | RTX 4050 | 32GB RAM
-
-**Localização:** Ourinhos, SP - Brazil
 
 
 
