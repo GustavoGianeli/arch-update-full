@@ -1,6 +1,6 @@
  <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">   [Português (BR)](README.pt-br.md)
 ---
-***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Version 4.0-3**
+***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Version 4.1-1**
 ---
 
 **An advanced, lightweight, and fully automated maintenance tool built for Arch Linux. It centralizes your updates, performance tweaks, and system integrity checks.**
@@ -9,25 +9,39 @@
 Smart synchronization across Pacman, AUR, Flatpaks, and Snaps, paired with real-time integrity auditing. Absolute automation that packs everything you need for updates and routine maintenance (orphan packages and cache purging), while keeping the ultimate control firmly in your hands.**
 
 ---
-**🚀 What's New: Arch Update Full v: 4.0-3**
-bug fixes!
+**🚀 What's New: Arch Update Full v: 4.1-1**
+
 Highlights of the new automation protocol version:
+
 bugs fixe!
-**Sentinel Module (Smart Notifications):**
+
+**💡 Post-Update Note**
+After updating the package via AUR/pacman, run the main script once in your terminal to complete the automatic Sentinel migration or open app desktop.
+
+**​⚜️ Sentinel Module (Smart Notifications):**
+
 Introduction of the dynamic visual alert system with exclusive beacon icons across three levels:
-**(The notification button waits 20 minutes before closing as "ignored by the operator"!)**
+**(The notification button waits 37 minutes before closing as "ignored by the operator"!)**
 
 **🔷 Blue Beacon: Routine updates (low volume).**
 
 **🔶 Yellow Beacon: Moderate volume of pending packages.**
 
-**🔴 Red Beacon / Kernel Tux: Critical alert (Kernel, NVIDIA/Mesa drivers, Systemd) requiring attention and suggesting a system reboot.**
+**🔴 Red Beacon Refactored Red Lighthouse: The Red Lighthouse icon is now triggered strictly by package accumulation (= + 34 pending packages), establishing a much clearer alert hierarchy**
+
+**🐧 New Special Icon & Refined Lighthouse Logic:** New Tux with Tools Icon: Added a dedicated notification featuring Tux holding a gear and wrench, exclusively reserved for Kernel and GPU Driver updates.
 
 **⚡ Official Pikaur Support:**
 Alongside yay and paru, the script now features complete native integration for the pikaur helper, expanding compatibility for AUR users.
 
-**🧱 Modular Architecture (Refactored Code):**
-The code is no longer an extensive monolithic script and has been completely rebuilt into independent, readable functions orchestrated by a clean and performant main() function.
+**🧱 Modular Architecture & Isolated Sentinel:**
+* Module Decoupling: The Sentinel mode has been separated from the main script into its own dedicated binary (arch-update-full-sentinela), drastically reducing the footprint of the interactive script.
+
+* Race Condition Elimination: Completely eliminates execution conflicts between the user interface and background automated checks.
+
+* Optimized Ghost Operation: The Sentinel runs every 3 hours via systemd --user in total background mode without requiring sudo, triggering notifications only when pending updates exist.
+
+* Self-Healing Mechanism: The main script automatically detects legacy systemd configurations and silently updates the service and timer files to the new path upon its first post-update run.
 
 **📰 Integrated Arch Linux News:**
 Now you can read the latest official Arch Linux news directly through the terminal inside arch-update-full, ensuring you know about manual interventions before updating.
@@ -39,7 +53,7 @@ Mirrorlist optimization via reflector has been improved: now the system explicit
 Clean, modern, and minimalist CLI interface, using a Neon tone palette for maximum legibility.
 **The codebase has been structured to support automatic system language detection in future updates, displaying the terminal directly in PT-BR or EN-US.**
 
-**🌐 Temporary Bilingual Support: To embrace our global community, terminal outputs now feature dual side-by-side text (PT-BR and EN-US).**
+**🌐 Temporary Bilingual Support: Ongoing Multi-Language Support: Initial code restructuring to automatically detect the host system language. Roadmap Languages: Groundwork laid to automatically handle PT-BR (Portuguese), EN-US (English), and ES-ES (Spanish)..**
 
 ✅ **ShellCheck Certified: 100% validated code**. Zero syntax and logic errors, ensuring maximum stability in Bash.
 
@@ -67,7 +81,7 @@ pikaur -S arch-update-full
 
 ---
 # **Protocol Architecture (Core Functions)**
-**🛡️ Arch Update Full: Sentinel Protocol (V:4.0)**
+**🛡️ Arch Update Full: Sentinel Protocol (V:4.1)**
 
 arch-update-full has evolved from a simple script into an autonomous maintenance ecosystem. It now executes a rigorous sequence of 16 intelligence and integrity layers, ensuring your Arch Linux remains at the absolute cutting edge of performance and security:
 
@@ -81,13 +95,13 @@ arch-update-full has evolved from a simple script into an autonomous maintenance
 
 4. **Integrity & Core Sync (Pacman):** Performs a deep synchronization of the official repositories and updates critical system core packages.
 
-5. **AUR Intelligence Hub:** Automated discovery of *AUR Helpers*. Features native, intelligent support for **Yay** or **Paru**, allowing you to choose your update engine on the fly.
+5. **AUR Intelligence Hub:** Automated discovery of *AUR Helpers*. Features native, intelligent support for **Yay**, **PikAur** or **Paru**, allowing you to choose your update engine on the fly.
 
 6. **Universal Sandbox Update:** Full synchronization of isolated sandbox applications via **Flatpak** and universal packages via **Snapd**, ensuring no sector of the system falls behind.
 
 7. **Disk Integrity Reserve:** Pre-update disk space auditing. If your SSD drops below 5GB of free space, the script executes an emergency purge or aborts the process entirely to prevent data corruption.
 
-8. **Core Audit (Kernel & Driver Check):** Real-time scanning of Pacman logs to flag critical changes to **Nvidia** drivers, the **Linux Kernel**, **Mesa**, or **Systemd**.
+8. **Core Audit (Kernel & Driver Check):** Real-time scanning of Pacman logs to flag critical changes to **Nvidia**, **AMD** drivers, the **Linux Kernel**, **Mesa**, or **Systemd**.
 
 9. **Orphan & Cache Purge:** Locates and sweeps away residual dependencies (orphans) while stabilizing the package cache—retaining the last 3 versions via `paccache`, `paccache -r`, and `pacman -Sc`—to preserve your SSD’s lifespan.
 
@@ -115,15 +129,15 @@ The protocol manages two independent log streams:
 **Smart Notifications**
 
 ---
+<img width="533" height="178" alt="imagem aviso de kernel" src="https://github.com/user-attachments/assets/d369f36f-07f2-4141-93bd-32cb3176c5eb" />
 
-<img width="620" height="241" alt="notificação sentila azul" src="https://github.com/user-attachments/assets/e1379b74-e5da-4fd9-895c-29f9940d6c18" />
-<img width="678" height="261" alt="notificação vermelha" src="https://github.com/user-attachments/assets/fb869b96-7911-4d40-88e5-7be5d289bc74" />
 <img width="543" height="167" alt="notificação final" src="https://github.com/user-attachments/assets/1b713c33-53a5-4a48-8021-08fff8226f4c" />
 
 **Real-time desktop alerts regarding the availability of new updates and immediate confirmation upon completing the maintenance protocol.**
 
 **Icon usage logic:**
-<img width="1254" height="1254" alt="logica farol atualizado" src="https://github.com/user-attachments/assets/f8eddfb3-94dd-49ef-ad30-e8d96516de29" />
+
+<img width="1200" height="896" alt="novo funcionamento arch " src="https://github.com/user-attachments/assets/13c33f4a-e982-4d57-807a-fe0b48a6b256" />
 
 ---
 ## **UI & Visuals**
@@ -134,18 +148,16 @@ The protocol manages two independent log streams:
 ### **⚡ Sentinel Protocol in Action :**
 ---
 
-<img width="1165" height="863" alt="1" src="https://github.com/user-attachments/assets/fc1ed2d1-bb2d-4e4d-abfb-9182dff574d9" />
-<img width="1165" height="863" alt="2" src="https://github.com/user-attachments/assets/366421a2-25f0-4a0a-8acd-1ef8bca4979a" />
-<img width="1165" height="863" alt="3" src="https://github.com/user-attachments/assets/647398c4-3371-46a6-863e-cba198a2e966" />
-<img width="1165" height="863" alt="4" src="https://github.com/user-attachments/assets/a23f5a2f-f38d-4065-91e2-aa794b318868" />
-<img width="1165" height="863" alt="5" src="https://github.com/user-attachments/assets/a82bb590-5b1c-4a9b-a927-11128bba6be7" />
-<img width="1165" height="863" alt="6" src="https://github.com/user-attachments/assets/000a1568-a08d-47a8-8f27-491aa1a74d3b" />
-<img width="1165" height="863" alt="7" src="https://github.com/user-attachments/assets/62917bd5-9de7-4f9c-93d4-0995d7d48990" />
-<img width="1165" height="863" alt="8" src="https://github.com/user-attachments/assets/c6c8cce2-2551-45ac-999a-cb2f882388fa" />
-<img width="1165" height="863" alt="9" src="https://github.com/user-attachments/assets/74a4b5dd-f2d1-4806-9692-773a6a8884e3" />
+<img width="1043" height="747" alt="1 Imagem colada" src="https://github.com/user-attachments/assets/2afd7c6f-ad3a-45a7-8108-1bf09e0a62e1" />
+<img width="1043" height="747" alt="2" src="https://github.com/user-attachments/assets/22ac9771-ad8d-4ec4-a234-f881acf88cd0" />
+<img width="1043" height="747" alt="3" src="https://github.com/user-attachments/assets/ad09be6f-ac75-4878-8d65-6dbe56ad9e38" />
+<img width="1043" height="747" alt="4" src="https://github.com/user-attachments/assets/4112b789-5f43-4aa7-a6d8-70888b207215" />
+<img width="1043" height="747" alt="5" src="https://github.com/user-attachments/assets/838a363f-821e-4c3a-a10b-f715c9ee2ec6" />
+<img width="1069" height="763" alt="6" src="https://github.com/user-attachments/assets/d5c2b3e3-d1b9-440c-be0d-504d6598e4d9" />
+<img width="1069" height="763" alt="7" src="https://github.com/user-attachments/assets/f6632b02-e6a0-4ed3-b1e3-1214923c6988" />
+<img width="1090" height="829" alt="8" src="https://github.com/user-attachments/assets/4909b37f-37ba-41fa-b725-e21c0529fd60" />
 
-https://github.com/user-attachments/assets/56ae70dc-ea84-4852-b0b8-feb36229ce8f
-
+https://github.com/user-attachments/assets/8bcd3684-fc2b-434e-99e4-f68bb230f08a
 
 ### **🚀 System Menu**
 ---
@@ -189,8 +201,5 @@ Created By: **𝕿𝖍𝖊 S𝖊𝖛𝖊𝖓𝖙𝖍** — 𝓦𝓱𝓮𝓻𝓮 
 
 **Education:** Computer Science Student (Linux enthusiast & tinkerer)
 
-**Hardware:** Acer Nitro V15 | i7 13th Gen | RTX 4050 | 32GB RAM
-
-**Location:** Ourinhos, SP - Brazil
 
 **⚠️ ​Language & Transparency Log: This documentation was originally created by me in Portuguese. Since I am a Computer Science student and currently an English beginner, about 80% of this README was translated and verified with AI assistance, then fully reviewed and adjusted by myself. Using technology every day to reach a global audience !⚠️**
