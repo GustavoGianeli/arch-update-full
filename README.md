@@ -173,28 +173,6 @@ git clone https://aur.archlinux.org/arch-update-full.git
 cd arch-update-full
 makepkg -si
 ```
-**➡ Or, if you prefer to deploy the files directly and manually:**
-
-**1. Inject the script into your system PATH:**
-```bash
-sudo cp arch-update-full /usr/bin/arch-update-full
-sudo chmod 755 /usr/bin/arch-update-full
-```
-**2. Move the icon to the system pixmaps directory:**
-```bash
-sudo cp novalogoarchupdatefullv39.png /usr/share/pixmaps/
-```
-**3. Install the shortcut into the applications menu (XDG):**
-```bash
-sudo cp arch-update-full.desktop /usr/share/applications/arch-update-full.desktop
-```
-**4. Install Sentinel Module icons (Notification Beacons):**
-```bash
-sudo mkdir -p /usr/share/arch-update-full/icons
-sudo cp farol_azul_simbolo.png /usr/share/arch-update-full/icons/
-sudo cp farol_amarelo_simbolo.png /usr/share/arch-update-full/icons/
-sudo cp farol_vermelho_simbolo.png /usr/share/arch-update-full/icons/
-```
 ---
 
 ### 
