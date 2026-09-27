@@ -175,31 +175,7 @@ git clone https://aur.archlinux.org/arch-update-full.git
 cd arch-update-full
 makepkg -si
 ```
-**➡ Ou se preferir fazer o desdobramento dos arquivos de forma direta e manual:**
-
-**1. Injeta o script no path do sistema:**
-```bash
-sudo cp arch-update-full /usr/bin/arch-update-full
-sudo chmod 755 /usr/bin/arch-update-full
-```
-**2. Move o ícone para o diretório de pixmaps do sistema:**
-```bash
-sudo cp novalogoarchupdatefullv39.png /usr/share/pixmaps/
-```
-**3. Instala o atalho no menu de aplicações (XDG):**
-```bash
-sudo cp arch-update-full.desktop /usr/share/applications/arch-update-full.desktop
-```
-**4. Instala os ícones do Módulo Sentinela (Faróis de Notificação):**
-```bash
-sudo mkdir -p /usr/share/arch-update-full/icons
-sudo cp farol_azul_simbolo.png /usr/share/arch-update-full/icons/
-sudo cp farol_amarelo_simbolo.png /usr/share/arch-update-full/icons/
-sudo cp farol_vermelho_simbolo.png /usr/share/arch-update-full/icons/
-```
-
 ---
-
 
 **"Created By: 𝕿𝖍𝖊 S𝖊𝖛𝖊𝖓𝖙𝖍  —  𝓸𝓷𝓭𝓮  𝓪  𝓲𝓷𝓽𝓮𝓰𝓻𝓲𝓭𝓪𝓭𝓮  𝓮𝓷𝓬𝓸𝓷𝓽𝓻𝓪  𝓪  𝓹𝓮𝓻𝓯𝓸𝓻𝓶𝓪𝓷𝓬𝓮."**
 
