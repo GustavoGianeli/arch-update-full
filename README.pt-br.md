@@ -189,7 +189,7 @@ makepkg -si
 ```
 ---
 
-**"Created By: 𝕿𝖍𝖊 S𝖊𝖛𝖊𝖓𝖙𝖍  —  𝓸𝓷𝓭𝓮  𝓪  𝓲𝓷𝓽𝓮𝓰𝓻𝓲𝓭𝓪𝓭𝓮  𝓮𝓷𝓬𝓸𝓷𝓽𝓻𝓪  𝓪  𝓹𝓮𝓻𝓯𝓸𝓻𝓶𝓪𝓷𝓬𝓮."**
+Created By: **Gustavo Gianeli(𝕿𝖍𝖊 S𝖊𝖛𝖊𝖓𝖙𝖍)**"
 
 ---
 
@@ -197,7 +197,7 @@ makepkg -si
 
 **Foco do Projeto:** Automação Shell para Manutenção e Auditoria da Base Arch Linux.
 
-**Autor:** Gustavo Gianeli (O Sétimo)
+**Autor:** Gustavo Gianeli (The Seventh)
 
 **Educação:** Estudante de Ciência da Computação (entusiasta de Linux e fuçador)
 
