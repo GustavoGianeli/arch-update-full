@@ -190,7 +190,7 @@ makepkg -si
 
 ### 
 
-Created By: **𝕿𝖍𝖊 S𝖊𝖛𝖊𝖓𝖙𝖍** — 𝓦𝓱𝓮𝓻𝓮 𝓲𝓷𝓽𝓮𝓰𝓻𝓲𝓽𝔂 𝓶𝓮𝓮𝓽𝓼 𝓹𝓮𝓻𝓯𝓸𝓻𝓶𝓪𝓷𝓬𝓮. "**
+Created By: **Gustavo Gianeli(𝕿𝖍𝖊 S𝖊𝖛𝖊𝖓𝖙𝖍)**"
 
 ---
 
