@@ -1,6 +1,7 @@
  <img src="https://flagcdn.com/16x12/us.png" alt="US">  [English (US)](README.md) | <img src="https://flagcdn.com/16x12/br.png" alt="BR">   [Português (BR)](README.pt-br.md)
 ---
 ***🛡️ Arch Update Full (Sentinel Protocol)🔄*** **Version 4.1**
+<img width="1280" height="832" alt="arch-update-full-banner-preview" src="https://github.com/user-attachments/assets/068fea95-7df6-42c4-8392-85c284138d97" />
 ---
 
 **An advanced, lightweight, and fully automated maintenance tool built for Arch Linux. It centralizes your updates, performance tweaks, and system integrity checks.**
